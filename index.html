@@ -110,8 +110,8 @@
     <nav>
         <ul>
             <li><a href="#about-me">About Me</a></li>
-            <li><a href="#publications">Publications</a></li>
-            <li><a href="#teaching">Teaching/Grading/Mentorship</a></li>
+            <li><a href="#" onclick="toggleSection('publications')">Publications</a></li>
+            <li><a href="#" onclick="toggleSection('teaching')">Teaching/Grading/Mentorship</a></li>
         </ul>
     </nav>
 
@@ -158,5 +158,16 @@
     <footer>
         <p>&copy; 2023 Daniel Flores | <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></p>
     </footer>
+
+    <script>
+        function toggleSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            if (section.style.display === "none") {
+                section.style.display = "block";
+            } else {
+                section.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>
