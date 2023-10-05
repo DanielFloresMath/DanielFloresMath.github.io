@@ -99,6 +99,16 @@
         footer a:hover {
             text-decoration: underline;
         }
+	section {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+
+        section.open {
+            max-height: 1000px; /* Adjust this value as needed */
+            transition: max-height 0.3s ease-in;
+        }
     </style>
 </head>
 <body>
@@ -125,7 +135,7 @@
         <p>My name is Daniel Flores, and I'm a fifth-year Ph.D. student studying under Trevor Wooley. My research interests include analytic number theory, the Hardy-Littlewood circle method, harmonic analysis, and arithmetic statistics. Outside of mathematics, I enjoy spending time with my family and playing PC games.</p>
     </section>
 
-    <section id="publications" style="display: none;">
+    <section id="publications" class="closed">
         <h2>Publications</h2>
         <h3>Submitted</h3>
         <ul>
@@ -139,7 +149,7 @@
         </ul>
     </section>
 
-    <section id="teaching" style="display: none;">
+    <section id="teaching" class="closed">
         <h2>Teaching/Grading/Mentorship</h2>
         <ul>
             <li>2013-2019, Mathematics tutor at Lone Star College - North Harris.</li>
@@ -162,10 +172,10 @@
     <script>
         function toggleSection(sectionId) {
             var section = document.getElementById(sectionId);
-            if (section.style.display === "none" || section.style.display === "") {
-                section.style.display = "block";
+            if (section.classList.contains("open")) {
+                section.classList.remove("open");
             } else {
-                section.style.display = "none";
+                section.classList.add("open");
             }
         }
     </script>
