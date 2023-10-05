@@ -4,18 +4,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daniel Flores - Homepage</title>
-    <link rel="stylesheet" href="styles.css"> <!-- You can link to an external CSS file for styling -->
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #007acc;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        header img {
+            display: block;
+            margin: 20px auto;
+            border-radius: 50%;
+        }
+
+        nav ul {
+            list-style-type: none;
+            text-align: center;
+            background-color: #fff;
+            padding: 10px 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #007acc;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        section {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        ul li b {
+            display: inline-block;
+            width: 120px;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #007acc;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Daniel Flores</h1>
-        <img src="ProfilePicture.jpg" alt="My photo" width="200" height="266">
+        <img src="ProfilePicture.jpg" alt="My photo" width="200" height="200">
     </header>
 
+    <nav>
+        <ul>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#teaching">Teaching/Grading/Mentorship</a></li>
+        </ul>
+    </nav>
+
     <section id="about-me">
-	<ul>
+        <ul>
             <li><b>Office:</b> MATH G140 </li>
-	    <li><b>Email:</b> flore205 AT purdue DOT edu </li>
+            <li><b>Email:</b> flore205 AT purdue DOT edu </li>
         </ul>
 
         <h2>About Me</h2>
@@ -41,19 +144,19 @@
         <ul>
             <li>2013-2019, Mathematics tutor at Lone Star College - North Harris.</li>
             <li>2018-2019, Undergraduate Grader/Mathematics tutor - University of Houston.</li>
-	    <li>Fall 2019, TA for MA 16600 - Analytic Geometry And Calculus II - Purdue University.</li>
-	    <li>Fall 2020, TA for MA 26100 - Multivariate Calculus - Purdue University.</li>
-	    <li>Summer 2022, Graduate Mentor for the <a href="https://www.purdue.edu/gradschool/diversity/programs/summer-research-opportunities-program/">Summer Research Opportunities Program</a> - Purdue University.</li>
-	    <li>Fall 2022, Grader for MA 55300 - Introduction To Abstract Algebra - Purdue University.</li>
-	    <li>Fall 2022, Grader for MA 55700 - Abstract Algebra I - Purdue University.</li>
-	    <li>Fall 2023, Graduate Mentor for the <a href="https://www.math.purdue.edu/~mathclub/">Mathematics Mentoring Program</a> - Purdue University.</li>
-	    <li>Fall 2023, Grader for two sections of MA 34100 - Foundations of Analysis - Purdue University.</li>
+            <li>Fall 2019, TA for MA 16600 - Analytic Geometry And Calculus II - Purdue University.</li>
+            <li>Fall 2020, TA for MA 26100 - Multivariate Calculus - Purdue University.</li>
+            <li>Summer 2022, Graduate Mentor for the <a href="https://www.purdue.edu/gradschool/diversity/programs/summer-research-opportunities-program/">Summer Research Opportunities Program</a> - Purdue University.</li>
+            <li>Fall 2022, Grader for MA 55300 - Introduction To Abstract Algebra - Purdue University.</li>
+            <li>Fall 2022, Grader for MA 55700 - Abstract Algebra I - Purdue University.</li>
+            <li>Fall 2023, Graduate Mentor for the <a href="https://www.math.purdue.edu/~mathclub/">Mathematics Mentoring Program</a> - Purdue University.</li>
+            <li>Fall 2023, Grader for two sections of MA 34100 - Foundations of Analysis - Purdue University.</li>
             <!-- Add more teaching or mentorship experiences -->
         </ul>
     </section>
 
     <footer>
-        <p>&copy; 2023 Daniel Flores | <a href="https://www.linkedin.com/in/daniel-flores-8b4995b6/" target="_blank">LinkedIn</a></p>
+        <p>&copy; 2023 Daniel Flores | <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></p>
     </footer>
 </body>
 </html>
