@@ -57,6 +57,7 @@
             margin: 20px;
             border-radius: 5px;
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            min-height: 50px; /* Ensure content isn't cut off */
         }
 
         h2 {
@@ -98,16 +99,6 @@
 
         footer a:hover {
             text-decoration: underline;
-        }
-	section {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease-out;
-        }
-
-        section.open {
-            max-height: 1000px; /* Adjust this value as needed */
-            transition: max-height 0.3s ease-in;
         }
     </style>
 </head>
