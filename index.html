@@ -161,7 +161,8 @@
     </footer>
 
     <script>
-        function toggleSection(sectionId) {
+    function toggleSection(sectionId) {
+        if (sectionId !== "about-me") {
             var section = document.getElementById(sectionId);
             if (section.classList.contains("open")) {
                 section.classList.remove("open");
@@ -169,6 +170,7 @@
                 section.classList.add("open");
             }
         }
+    }
     </script>
 </body>
 </html>
