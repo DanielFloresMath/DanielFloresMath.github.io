@@ -6,115 +6,26 @@
     <title>Daniel Flores - Homepage</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #f0f0f0;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #007acc;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-        }
-
-        header h1 {
-            font-size: 36px;
-            margin: 0;
-        }
-
-        header img {
-            display: block;
-            margin: 20px auto;
-            border-radius: 50%;
-        }
-
-        nav ul {
-            list-style-type: none;
-            text-align: center;
-            background-color: #fff;
-            padding: 10px 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #007acc;
-            font-weight: bold;
-            font-size: 16px;
-        }
-
-        section {
-    	background-color: #fff;
-    	padding: 20px;
-	max-height: 1000px;
-    	margin: 20px;
-    	border-radius: 5px;
-    	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    	overflow: hidden;
-    	transition: max-height 0.3s ease-in-out, padding 0.2s ease-in-out;
-	}
-
-	section.closed {
-    	max-height: 25px;
-    	padding-top: 5px; /* Remove top padding */
-    	padding-bottom: 5px; /* Remove bottom padding */
-	}
-
-        h2 {
-            font-size: 24px;
-            color: #333;
-        }
-
-        p {
-            line-height: 1.6;
-            margin-bottom: 20px;
-        }
-
-        ul {
-            list-style: none;
-            padding-left: 20px;
-        }
-
-        ul li {
-            margin-bottom: 10px;
-        }
-
-        ul li b {
-            display: inline-block;
-            width: 120px;
-            font-weight: bold;
-        }
-
-        footer {
-            background-color: #007acc;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-        }
-
-        footer a {
-            color: #fff;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-    </style>
 </head>
 <body>
-    <header>
+
+<header>
+    <div class="header-left">
         <h1>Daniel Flores</h1>
-        <img src="ProfilePicture.jpg" alt="My photo" width="200" height="200">
-    </header>
+        <img src="ProfilePicture.jpg" alt="My photo" width="200" height="266">
+    </div>
+    <div class="header-right">
+	<section id="about-me">
+	<h2>About Me</h2>
+        <ul>
+            <li><b>Office:</b> MATH G140 </li>
+            <li><b>Email:</b> flore205 AT purdue DOT edu </li>
+        </ul>
+        <p>My name is Daniel Flores, and I'm a fifth-year Ph.D. student studying under Trevor Wooley. My research interests include analytic number theory, the Hardy-Littlewood circle method, harmonic analysis, and arithmetic statistics. Outside of mathematics, I enjoy spending time with my family and playing PC games.</p>
+    	</section>
+     </div>
+    <div style="clear: both;"></div> <!-- This ensures that the floating elements are contained within the header -->
+</header>
 
     <nav>
         <ul>
@@ -124,14 +35,7 @@
         </ul>
     </nav>
 
-    <section id="about-me">
-	<h2>About Me</h2>
-        <ul>
-            <li><b>Office:</b> MATH G140 </li>
-            <li><b>Email:</b> flore205 AT purdue DOT edu </li>
-        </ul>
-        <p>My name is Daniel Flores, and I'm a fifth-year Ph.D. student studying under Trevor Wooley. My research interests include analytic number theory, the Hardy-Littlewood circle method, harmonic analysis, and arithmetic statistics. Outside of mathematics, I enjoy spending time with my family and playing PC games.</p>
-    </section>
+    
 
     <section id="publications" class="closed">
         <h2>Publications</h2>
