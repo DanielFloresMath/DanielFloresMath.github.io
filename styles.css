@@ -123,3 +123,21 @@ footer a:hover {
     color: #ffffff;
     text-decoration: underline;
 }
+a[href*="CV_DF.pdf"] {
+    background-color: #2E2E2E;  /* dark gray background */
+    color: white;  /* white text */
+    padding: 5px 10px;  /* some padding */
+    border-radius: 5px;  /* rounded corners */
+    text-decoration: none;  /* remove underline */
+}
+
+a[href*="CV_DF.pdf"]:hover {
+    background-color: #B0B0B0;  /* light gray on hover */
+}
+nav a, footer a, ul li a {
+    color: #d0d0d0;  /* Slightly brighter than the previous shade */
+}
+nav a:hover, footer a:hover, ul li a:hover {
+    color: #ffffff;  /* Making it white on hover for better distinction */
+    text-decoration: underline;
+}
