@@ -1,0 +1,146 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+header img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 50%;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    background-color: #3a3a3a;
+    padding: 10px 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #b0b0b0;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+.header-left {
+    float: left;
+    width: 30%; /* or you can adjust as needed */
+}
+
+.header-right {
+    float: left;
+    width: 68%; /* or you can adjust as needed, keep in mind the total width + any margin or padding should ideally be less than 100% */
+    padding-left: 2%; /* Some space between the image and the About Me section */
+}
+
+/* Responsive styling, so on smaller screens the image and About Me section will stack */
+@media (max-width: 768px) {
+    .header-left, .header-right {
+        float: none;
+        width: 100%;
+    }
+}
+
+section {
+    background-color: #424242;
+    padding: 20px;
+    max-height: 1000px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out, padding 0.2s ease-in-out;
+}
+
+section.closed {
+    max-height: 60px;
+    padding-top: 0px; /* Remove top padding */
+    padding-bottom: 0px; /* Remove bottom padding */
+}
+
+h2 {
+    font-size: 24px;
+    color: #e0e0e0;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li b {
+    display: inline-block;
+    width: 120px;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+footer a {
+    color: #b0b0b0;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+a[href*="CV_DF.pdf"] {
+    background-color: #2E2E2E;  /* dark gray background */
+    color: white;  /* white text */
+    padding: 5px 10px;  /* some padding */
+    border-radius: 5px;  /* rounded corners */
+    text-decoration: none;  /* remove underline */
+}
+
+a[href*="CV_DF.pdf"]:hover {
+    background-color: #B0B0B0;  /* light gray on hover */
+}
+nav a, footer a, ul li a {
+    color: #d0d0d0;  /* Slightly brighter than the previous shade */
+}
+nav a:hover, footer a:hover, ul li a:hover {
+    color: #ffffff;  /* Making it white on hover for better distinction */
+    text-decoration: underline;
+}
+.toggle-header {
+    cursor: pointer;
+}

@@ -4,10 +4,16 @@ body {
     color: #e0e0e0;
     margin: 0;
     padding: 0;
+    background-image: url('file:///C:/Users/ddaan/Documents/GitHub/DanielFloresMath.github.io/Index_files/Background.png');
+    background-size: cover; /* cover ensures the background spans the entire viewport */
+    background-repeat: no-repeat; /* prevents the image from repeating */
+    background-attachment: fixed; /* keeps the background image fixed during scrolling */
+    background-position: center center; /* centers the background image */
 }
 
 header {
-    background-color: #333;
+    background-color: rgba(50, 50, 50, 0.8); /* This represents a dark gray color with 80% opacity */
+    /*background-color: #333;*/
     color: #fff;
     text-align: center;
     padding: 20px;
@@ -64,24 +70,35 @@ nav a:hover {
         width: 100%;
     }
 }
+.section-header {
+    background-color: rgba(50, 50, 50, 0.8); /* This represents a dark gray color with 80% opacity */
+    color: #b0b0b0;             /* Matching the nav text color */
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid #333;    /* Using the header's background color for a subtle border */
+    font-size: 40px;           /* Matching h2's font size */
+    border-radius: 5px 5px 0 0; /* Only rounding the top corners to blend with section content */
+    margin: 20px 20px 0 20px;   /* Adding margin to keep the sections spaced */
+}
 
-section {
-    background-color: #424242;
-    padding: 20px;
-    max-height: 1000px;
-    margin: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+.section-content {
     overflow: hidden;
-    transition: max-height 0.3s ease-in-out, padding 0.2s ease-in-out;
+    max-height: 0;
+    transition: max-height 0.3s ease-in-out;
+    background-color: rgba(50, 50, 50, 0.8); /* This represents a dark gray color with 80% opacity */
+    color: #e0e0e0;             /* Matching the section's text color */
+    padding: 20px;
+    border: 1px solid #333;     /* Using the header's background color for a subtle border */
+    border-top: none;           /* Removing the top border to blend with section header */
+    border-radius: 0 0 5px 5px; /* Only rounding the bottom corners */
+    margin: 0 20px 20px 20px;   /* Adding margin to keep the sections spaced */
 }
-
-section.closed {
-    max-height: 60px;
-    padding-top: 0px; /* Remove top padding */
-    padding-bottom: 0px; /* Remove bottom padding */
+.expanded {
+    max-height: 500px; /* You might need to adjust this value depending on the content height */
 }
-
+.section .section-header:hover {
+    background-color: #333;     /* Slightly darker on hover */
+}
 h2 {
     font-size: 24px;
     color: #e0e0e0;
@@ -108,7 +125,7 @@ ul li b {
 }
 
 footer {
-    background-color: #333;
+    background-color: rgba(50, 50, 50, 0.8); /* This represents a dark gray color with 80% opacity */
     color: #fff;
     text-align: center;
     padding: 10px;
@@ -141,3 +158,5 @@ nav a:hover, footer a:hover, ul li a:hover {
     color: #ffffff;  /* Making it white on hover for better distinction */
     text-decoration: underline;
 }
+.toggle-header {
+    cursor: pointer;

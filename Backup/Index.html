@@ -1,9 +1,11 @@
 <!DOCTYPE html>
+<!-- saved from url=(0078)file:///C:/Users/ddaan/Documents/GitHub/DanielFloresMath.github.io/index.html# -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daniel Flores - Homepage</title>
     <link rel="stylesheet" href="./Index_files/styles.css">
+    <link href="./Index_files/css2" rel="stylesheet">
 </head>
 <body>
 
@@ -26,13 +28,18 @@
     <div style="clear: both;"></div> <!-- This ensures that the floating elements are contained within the header -->
 </header>
 
-    
+    <nav>
+        <ul>
+            <!-- <li><a href="#about-me">About Me</a></li> -->
+            <li><a href="file:///C:/Users/ddaan/Documents/GitHub/DanielFloresMath.github.io/index.html#" onclick="toggleSection(&#39;publications&#39;)">Publications</a></li>
+            <li><a href="file:///C:/Users/ddaan/Documents/GitHub/DanielFloresMath.github.io/index.html#" onclick="toggleSection(&#39;teaching&#39;)">Teaching/Grading/Mentorship</a></li>
+        </ul>
+    </nav>
 
     
 
-    <div class="section">
-    <div class="section-header">Publications</div>
-    <div class="section-content" id="publications">
+    <section id="publications" class="closed">
+        <h2>Publications</h2>
         <h3>Submitted</h3>
         <ul>
             <li><a href="file:///C:/Users/ddaan/Documents/GitHub/DanielFloresMath.github.io/placeholder.pdf" target="_blank">[1] D. Flores, "Quantitative Hasse Principle for a Certain Family of Weighted Quartic Forms," submitted</a></li>
@@ -43,12 +50,9 @@
             <li><a href="file:///C:/Users/ddaan/Documents/GitHub/DanielFloresMath.github.io/published-paper.pdf" target="_blank">Nothing Here Yet.</a></li>
             <!-- Add more published papers -->
         </ul>
-    </div>
-</div>
+    </section>
 
-    <div class="section">
-    <div class="section-header">Teaching/Grading/Mentorship</div>
-    <div class="section-content" id="teaching">
+    <section id="teaching" class="closed">
         <h2>Teaching/Grading/Mentorship</h2>
         <ul>
             <li>2013-2019, Mathematics tutor at Lone Star College - North Harris.</li>
@@ -62,24 +66,24 @@
             <li>Fall 2023, Grader for two sections of MA 34100 - Foundations of Analysis - Purdue University.</li>
             <!-- Add more teaching or mentorship experiences -->
         </ul>
-    </div>
-</div>
-
+    </section>
 
     <footer>
-        <p>© 2023 Daniel Flores | <a href="https://www.linkedin.com/in/daniel-flores-8b4995b6/" target="_blank">LinkedIn</a></p>
+        <p>© 2023 Daniel Flores | <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></p>
     </footer>
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-    var headers = document.querySelectorAll(".section-header");
-    
-    headers.forEach(function(header) {
-        header.addEventListener("click", function() {
-            var content = this.nextElementSibling;
-            content.classList.toggle('expanded');
-        });
-    });
-});
-</script>
-</body>
-</html>
+
+    <script>
+     function toggleSection(sectionId) {
+        if (sectionId !== "about-me") {
+            var section = document.getElementById(sectionId);
+            if (section.classList.contains("closed")) {
+                section.classList.remove("closed");
+            } else {
+                section.classList.add("closed");
+            }
+        }
+    }
+    </script>
+
+
+</body></html>
