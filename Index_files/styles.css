@@ -4,7 +4,7 @@ body {
     color: #e0e0e0;
     margin: 0;
     padding: 0;
-    background-image: url('file:///C:/Users/ddaan/Documents/GitHub/DanielFloresMath.github.io/Index_files/Background.png');
+    background-image: url('Background.png');
     background-size: cover; /* cover ensures the background spans the entire viewport */
     background-repeat: no-repeat; /* prevents the image from repeating */
     background-attachment: fixed; /* keeps the background image fixed during scrolling */
