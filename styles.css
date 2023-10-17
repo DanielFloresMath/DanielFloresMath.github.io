@@ -15,7 +15,7 @@ header {
     background-color: rgba(50, 50, 50, 0.8); /* This represents a dark gray color with 80% opacity */
     /*background-color: #333;*/
     color: #fff;
-    text-align: center;
+    /* text-align: center; */
     padding: 20px;
 }
 
