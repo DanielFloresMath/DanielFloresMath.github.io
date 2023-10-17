@@ -94,11 +94,17 @@ nav a:hover {
     margin: 0 20px 20px 20px;   /* Adding margin to keep the sections spaced */
 }
 .expanded {
-    max-height: 500px; /* You might need to adjust this value depending on the content height */
+    max-height: 700px; /* You might need to adjust this value depending on the content height */
 }
 .section .section-header:hover {
     background-color: #333;     /* Slightly darker on hover */
 }
+.about-me-section .section-content {
+    max-width: 800px; /* or whatever maximum width you prefer */
+    margin: auto; /* this centers the content */
+    text-align: left; /* optional: if you prefer a left-aligned text within the centered content box */
+}
+
 h2 {
     font-size: 24px;
     color: #e0e0e0;
