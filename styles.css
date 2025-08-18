@@ -94,7 +94,7 @@ nav a:hover {
     margin: 0 20px 20px 20px;   /* Adding margin to keep the sections spaced */
 }
 .expanded {
-    max-height: 700px; /* You might need to adjust this value depending on the content height */
+    max-height: 1200px; /* You might need to adjust this value depending on the content height */
 }
 .section .section-header:hover {
     background-color: #333;     /* Slightly darker on hover */
@@ -164,5 +164,23 @@ nav a:hover, footer a:hover, ul li a:hover {
     color: #ffffff;  /* Making it white on hover for better distinction */
     text-decoration: underline;
 }
+
+/* Global link styling */
+a {
+    color: #d0d0d0;
+    text-decoration: none;
+}
+
+a:hover,
+a:active {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #d0d0d0;
+}
+
+
 .toggle-header {
     cursor: pointer;
