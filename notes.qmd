@@ -1,0 +1,15 @@
+---
+title: "Notes"
+description: "Short expository posts on analytic number theory and related mathematics."
+listing:
+  contents: posts
+  sort: "date desc"
+  type: default
+  categories: true
+  feed: true
+page-layout: full
+toc: false
+---
+
+This section collects short expository posts, mathematical observations, and notes on analytic number theory. Draft posts are visible in the local preview but are omitted from the published site.
+

@@ -1,0 +1,63 @@
+---
+title: "Publications"
+description: "Publications and preprints by Daniel Flores."
+toc: false
+---
+
+## Preprints
+
+::: {.publication-entry}
+<span class="publication-status">Preprint · 2025</span>
+
+### The Hasse principle for homogeneous polynomials with random coefficients over thin sets II
+
+Daniel Flores and Kiseok Yeon.
+
+::: {.paper-links}
+<a class="paper-link" href="https://arxiv.org/abs/2506.01291">arXiv</a>
+<a class="paper-link" href="Publications/The_Hasse_principle_for__random_homogeneous_polynomials_in_thin_sets.pdf">PDF</a>
+:::
+:::
+
+## Published articles
+
+::: {.publication-entry}
+<span class="publication-status">Published · 2025</span>
+
+### A circle method approach to $K$-multimagic squares
+
+*Journal of the London Mathematical Society* **112** (2025), e70290.
+
+::: {.paper-links}
+<a class="paper-link" href="https://doi.org/10.1112/jlms.70290">DOI</a>
+<a class="paper-link" href="https://arxiv.org/abs/2406.08161">arXiv</a>
+<a class="paper-link" href="Publications/K_multimagic_squares.pdf">PDF</a>
+:::
+:::
+
+::: {.publication-entry}
+<span class="publication-status">Published · 2025</span>
+
+### Existence of $K$-multimagic squares and magic squares of $k$th powers with distinct entries
+
+*Bulletin of the Australian Mathematical Society* **112** (2025), no. 3, 441--448.
+
+::: {.paper-links}
+<a class="paper-link" href="https://doi.org/10.1017/S0004972724001345">DOI</a>
+<a class="paper-link" href="Publications/Existence_of__K__multimagic_squares_and_magic_squares_of__k_th_powers_with_distinct_entries.pdf">PDF</a>
+:::
+:::
+
+::: {.publication-entry}
+<span class="publication-status">Published · 2024</span>
+
+### A quantitative Hasse principle for weighted quartic forms
+
+*Mathematika* **70** (2024), no. 1, e12236.
+
+::: {.paper-links}
+<a class="paper-link" href="https://doi.org/10.1112/mtk.12236">DOI</a>
+<a class="paper-link" href="Publications/Quantitative_Hasse_Principle_for_a_Certain_Family_of_Weighted_Quartic_Forms.pdf">PDF</a>
+:::
+:::
+

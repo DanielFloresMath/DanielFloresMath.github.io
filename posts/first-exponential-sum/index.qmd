@@ -1,0 +1,38 @@
+---
+title: "A first exponential sum estimate"
+description: "A short example illustrating notation and equation cross-references in a mathematical post."
+author: "Daniel Flores"
+date: 2026-08-10
+categories: [analytic number theory, exponential sums]
+draft: true
+---
+
+This draft illustrates the format available for short mathematical posts. Write
+
+$$
+e(\alpha)=e^{2\pi i\alpha}
+$$
+
+and consider the finite exponential sum
+
+$$
+S_N(\alpha)=\sum_{1\leq n\leq N} e(\alpha n).
+$$ {#eq-geometric-sum}
+
+If $\alpha\notin\mathbb Z$, the geometric-series identity gives
+
+$$
+S_N(\alpha)
+=e(\alpha)\frac{1-e(\alpha N)}{1-e(\alpha)}.
+$$
+
+Consequently, @eq-geometric-sum satisfies
+
+$$
+|S_N(\alpha)|\leq \min\left\{N,\frac{1}{2\|\alpha\|}\right\},
+$$
+
+where $\|\alpha\|$ denotes the distance from $\alpha$ to the nearest integer. This elementary estimate already exhibits a basic feature of the circle method: an exponential sum can be large only when its frequency lies close to a rational point with small denominator.
+
+> This is a private draft created to test the blog layout and mathematical rendering. Replace it with an authored post or remove `draft: true` only when it is ready for publication.
+

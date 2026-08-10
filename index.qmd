@@ -1,0 +1,102 @@
+---
+page-layout: full
+toc: false
+---
+
+::: {.hero-grid}
+::: {.hero-copy}
+<p class="hero-kicker">Analytic number theory</p>
+
+<h1 class="hero-title">Daniel Flores</h1>
+
+<p class="hero-summary">I study Diophantine equations through the Hardy--Littlewood circle method, with particular interests in weighted forms, exponential sums, arithmetic statistics, and additive questions.</p>
+
+<p class="hero-meta">Department of Mathematics · Rice University</p>
+
+::: {.hero-actions}
+<a class="site-button primary" href="publications.html">View publications</a>
+<a class="site-button" href="CV_DF.pdf" target="_blank">Curriculum vitae</a>
+<a class="site-button" href="mailto:df66@rice.edu">Contact</a>
+:::
+:::
+
+::: {.hero-photo}
+![](ProfilePicture.jpg){fig-alt="Daniel Flores in academic regalia"}
+:::
+:::
+
+## Research
+
+My work centers on analytic methods for counting integral solutions of polynomial equations. I am especially interested in settings where the geometry or weighting of the variables requires refinements of the classical circle method.
+
+::: {.feature-grid}
+::: {.feature-card}
+### Circle method
+
+Asymptotic formulae, major and minor arc analysis, and systems of Diophantine equations.
+:::
+
+::: {.feature-card}
+### Exponential sums
+
+Weyl-type estimates, mean values, and applications to additive problems.
+:::
+
+::: {.feature-card}
+### Arithmetic statistics
+
+Local-to-global principles and the distribution of soluble polynomial equations in families.
+:::
+:::
+
+## Recent work
+
+::: {.publication-entry}
+<span class="publication-status">Preprint</span>
+
+### The Hasse principle for homogeneous polynomials with random coefficients over thin sets II
+
+With Kiseok Yeon. We study the density of coefficient vectors on a thin algebraic set for which the associated homogeneous equation satisfies the Hasse principle.
+
+::: {.paper-links}
+<a class="paper-link" href="https://arxiv.org/abs/2506.01291">arXiv</a>
+<a class="paper-link" href="Publications/The_Hasse_principle_for__random_homogeneous_polynomials_in_thin_sets.pdf">PDF</a>
+:::
+:::
+
+::: {.publication-entry}
+<span class="publication-status">Published</span>
+
+### A circle method approach to $K$-multimagic squares
+
+*Journal of the London Mathematical Society* **112** (2025), e70290.
+
+::: {.paper-links}
+<a class="paper-link" href="https://doi.org/10.1112/jlms.70290">DOI</a>
+<a class="paper-link" href="https://arxiv.org/abs/2406.08161">arXiv</a>
+<a class="paper-link" href="Publications/K_multimagic_squares.pdf">PDF</a>
+:::
+:::
+
+## Contact
+
+::: {.contact-grid}
+::: {.contact-card}
+### Institution
+
+Department of Mathematics  
+Rice University
+:::
+
+::: {.contact-card}
+### Email
+
+[df66@rice.edu](mailto:df66@rice.edu)
+:::
+
+::: {.contact-card}
+### Profiles
+
+[GitHub](https://github.com/DanielFloresMath) · [ORCID](https://orcid.org/0009-0003-7623-2959)
+:::
+:::

@@ -1,0 +1,59 @@
+---
+title: "Talks"
+description: "Selected research and expository talks."
+---
+
+## Research talks
+
+::: {.timeline-item}
+### Existence of $K$-multimagic squares and magic squares of $k$th powers with distinct entries
+
+- Combinatorial and Additive Number Theory 2025, CUNY (Spring 2025)
+- Integers Conference 2025, University of Georgia (Spring 2025)
+- Analysis Seminar, Washington University in St. Louis (Spring 2025)
+- Algebraic Geometry and Number Theory Seminar, Rice University (Spring 2025)
+- Number Theory Seminar, Kansas State University (Spring 2025)
+- Purdue Analytic Number Theory and Harmonic Analysis Seminar (Spring 2025)
+- Joint Mathematics Meetings, Math Alliance (Spring 2025)
+- 33rd Journees Arithmetiques, University of Luxembourg (Spring 2025)
+- Number Theory Seminar, University of Gottingen (Fall 2024)
+:::
+
+::: {.timeline-item}
+### A circle method approach to $K$-multimagic squares
+
+- Student Analytic Number Theory Seminar, Stanford University (Fall 2024)
+- Number Theory Seminar, University of California, Davis (Fall 2024)
+- Canadian Number Theory Association XVI, University of Toronto (Summer 2024)
+- Combinatorial and Additive Number Theory 2024, CUNY (Spring 2024)
+
+[Selected slides](Talks/K_multimagic_squares_talk.pdf)
+:::
+
+::: {.timeline-item}
+### A quantitative Hasse principle for weighted quartic forms
+
+- AMS Central Sectional Meeting, University of Wisconsin--Milwaukee (Spring 2024)
+- Southern Regional Number Theory Conference, Louisiana State University (Spring 2024)
+- Pittsburgh Links among Analysis and Number Theory (Spring 2024)
+
+[Selected slides](Talks/AMS_Sectional_Talk.pdf)
+:::
+
+## Expository talks
+
+::: {.timeline-item}
+### A gentle introduction to the circle method
+
+Purdue Graduate Student Analysis Seminar (Fall 2023).
+
+[Slides](Talks/Student_Analysis_Talk.pdf)
+:::
+
+## Earlier work
+
+::: {.timeline-item}
+### Classification of noisy images with a coupled inversion-classification neural network
+
+LA-TX Undergraduate Mathematics Conference, Louisiana State University (Fall 2018).
+:::

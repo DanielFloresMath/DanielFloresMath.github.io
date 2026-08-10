@@ -1,0 +1,37 @@
+---
+title: "Teaching and Mentoring"
+description: "Teaching, grading, and mentoring experience."
+---
+
+## Teaching
+
+::: {.timeline-item}
+### Lecturer
+
+MA 16010, Applied Calculus I, Purdue University (Fall 2025).
+:::
+
+::: {.timeline-item}
+### Teaching assistant
+
+- MA 26100, Multivariate Calculus, Purdue University (Fall 2020 and Fall 2021)
+- MA 16600, Analytic Geometry and Calculus II, Purdue University (Fall 2019)
+:::
+
+## Grading and tutoring
+
+- Grader, MA 41600, Probability, Purdue University (Summer 2025)
+- Grader, MA 34100, Foundations of Analysis, Purdue University (Fall 2023)
+- Grader, MA 55700, Abstract Algebra I, Purdue University (Fall 2022)
+- Grader, MA 55300, Introduction to Abstract Algebra, Purdue University (Fall 2022)
+- Undergraduate grader and mathematics tutor, University of Houston (2018--2019)
+- Mathematics tutor, Lone Star College--North Harris (2013--2019)
+
+## Mentoring and service
+
+- Graduate mathematics mentor, Polymath Jr. 2025, under the direction of Steven J. Miller (Summer 2025)
+- Graduate mentor, AWM Math Mentor Program, Purdue University (Fall 2024--Spring 2025)
+- Graduate mentor, Mathematics Mentoring Program, Purdue University (Fall 2023)
+- Graduate mentor, Summer Research Opportunities Program, Purdue University (Summer 2022)
+- Member, Purdue Mathematics Graduate Representatives (Fall 2022)
+

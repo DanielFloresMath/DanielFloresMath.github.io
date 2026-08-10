@@ -1,0 +1,51 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Daniel Flores"
+  site-url: "https://danielfloresmath.github.io"
+  description: "Daniel Flores - analytic number theory, Diophantine equations, and the Hardy-Littlewood circle method."
+  favicon: ProfilePicture.jpg
+  search: true
+  open-graph: true
+  navbar:
+    pinned: true
+    left:
+      - text: Home
+        href: index.qmd
+      - text: Research
+        href: research.qmd
+      - text: Publications
+        href: publications.qmd
+      - text: Talks
+        href: talks.qmd
+      - text: Teaching
+        href: teaching.qmd
+      - text: Notes
+        href: notes.qmd
+    right:
+      - icon: file-earmark-person
+        href: CV_DF.pdf
+        aria-label: Curriculum vitae
+      - icon: github
+        href: https://github.com/DanielFloresMath
+        aria-label: GitHub
+      - icon: envelope
+        href: mailto:df66@rice.edu
+        aria-label: Email
+  page-footer:
+    left: "Copyright 2026, Daniel Flores"
+    right: "Built with [Quarto](https://quarto.org/)"
+
+format:
+  html:
+    theme:
+      - cosmo
+      - styles.scss
+    html-math-method: mathjax
+    link-external-newwindow: true
+    smooth-scroll: true
+    toc: true
+    toc-location: right
+
