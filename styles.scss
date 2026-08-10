@@ -172,6 +172,12 @@ button:focus-visible {
   box-shadow: 0 24px 60px rgba(0, 32, 91, 0.2);
 }
 
+.about-hero {
+  min-height: auto;
+  padding-top: 1.5rem;
+  padding-bottom: 2.5rem;
+}
+
 .feature-grid,
 .contact-grid {
   display: grid;

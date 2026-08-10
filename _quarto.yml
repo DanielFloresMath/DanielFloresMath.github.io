@@ -24,6 +24,8 @@ website:
         href: teaching.qmd
       - text: Notes
         href: notes.qmd
+      - text: About
+        href: about.qmd
     right:
       - icon: file-earmark-person
         href: CV_DF.pdf
@@ -48,4 +50,3 @@ format:
     smooth-scroll: true
     toc: true
     toc-location: right
-
