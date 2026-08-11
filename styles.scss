@@ -93,13 +93,17 @@ button:focus-visible {
   outline-offset: 3px;
 }
 
+#title-block-header:empty {
+  display: none;
+}
+
 .hero-grid {
   display: grid;
   grid-template-columns: minmax(0, 1.45fr) minmax(260px, 0.7fr);
   gap: clamp(2rem, 6vw, 5.5rem);
   align-items: center;
-  min-height: 68vh;
-  padding: clamp(2rem, 5vw, 5rem) 0;
+  min-height: auto;
+  padding: clamp(0.75rem, 1.5vw, 1.25rem) 0 1.75rem;
 }
 
 .hero-kicker,
@@ -115,14 +119,17 @@ button:focus-visible {
 .hero-title {
   margin: 0;
   max-width: 12ch;
-  font-size: clamp(3rem, 8vw, 5.9rem);
+  font-family: $headings-font-family;
+  font-size: clamp(3rem, 7vw, 5.2rem);
+  font-weight: $headings-font-weight;
   line-height: 0.98;
+  letter-spacing: -0.018em;
   color: #f5f8fd;
 }
 
 .hero-summary {
   max-width: 42rem;
-  margin: 1.5rem 0 0;
+  margin: 0.7rem 0 0;
   color: var(--site-muted);
   font-size: clamp(1.05rem, 2vw, 1.3rem);
 }
@@ -185,7 +192,7 @@ button:focus-visible {
 .hero-photo img {
   display: block;
   width: 100%;
-  max-height: 570px;
+  max-height: 380px;
   object-fit: cover;
   object-position: center 20%;
   border-radius: 1.25rem;
@@ -353,6 +360,10 @@ code,
 
 .navbar-nav.ms-auto .nav-link[href="https://github.com/DanielFloresMath"]::after {
   content: "GitHub";
+}
+
+.navbar-nav.ms-auto .nav-link[href^="https://www.linkedin.com/"]::after {
+  content: "LinkedIn";
 }
 
 .navbar-nav.ms-auto .nav-link[href^="mailto:"]::after {

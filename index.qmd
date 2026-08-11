@@ -5,9 +5,7 @@ toc: false
 
 ::: {.hero-grid}
 ::: {.hero-copy}
-<p class="hero-kicker">Analytic number theory</p>
-
-<h1 class="hero-title">Daniel Flores Galiote</h1>
+<div class="hero-title" role="heading" aria-level="1">Daniel Flores Galiote</div>
 
 <p class="hero-summary">Welcome to my academic webpage, I am a postdoctoral instructor in the Department of Mathematics at Rice University. I recently finished my PhD at Purdue University under the supervision of Trevor Wooley. I study problems concerning Diophantine equations via the Hardy--Littlewood circle method. In particular, I am interested in the statistical properties of rational and integer solutions to polynomial equations.</p>
 

@@ -37,6 +37,9 @@ website:
       - icon: github
         href: https://github.com/DanielFloresMath
         aria-label: GitHub
+      - icon: linkedin
+        href: https://www.linkedin.com/in/daniel-flores-8b4995b6/
+        aria-label: LinkedIn
       - icon: envelope
         href: mailto:df66@rice.edu
         aria-label: Email
