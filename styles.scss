@@ -1,25 +1,32 @@
 /*-- scss:defaults --*/
 
-$navy: #00205b;
-$blue: #146c94;
-$teal: #0f766e;
-$ink: #172033;
-$muted: #5e6878;
-$paper: #fbfcfe;
-$rule: #dbe2ea;
+$navy: #071a33;
+$blue: #8dbdff;
+$teal: #63d7ca;
+$ink: #e8eef7;
+$muted: #a9b5c8;
+$paper: #0b1220;
+$surface: #121d30;
+$surface-soft: #0f192a;
+$rule: #2d3b52;
 
 $primary: $navy;
 $body-bg: $paper;
 $body-color: $ink;
-$link-color: #075985;
+$link-color: #9bc7ff;
 $link-hover-color: $teal;
 $navbar-bg: $navy;
-$navbar-fg: #ffffff;
-$navbar-hl: #ffffff;
+$navbar-fg: #eef5ff;
+$navbar-hl: $teal;
 $font-family-sans-serif: Inter, Aptos, "Segoe UI", system-ui, -apple-system, sans-serif;
 $headings-font-family: Georgia, "Times New Roman", serif;
 $headings-font-weight: 600;
 $border-radius: 0.65rem;
+$border-color: $rule;
+$code-bg: #101a2b;
+$code-color: #d8e7ff;
+$pre-bg: #101a2b;
+$pre-color: #d8e7ff;
 
 /*-- scss:rules --*/
 
@@ -30,7 +37,10 @@ $border-radius: 0.65rem;
   --site-ink: #{$ink};
   --site-muted: #{$muted};
   --site-paper: #{$paper};
+  --site-surface: #{$surface};
+  --site-surface-soft: #{$surface-soft};
   --site-rule: #{$rule};
+  color-scheme: dark;
 }
 
 body {
@@ -40,7 +50,8 @@ body {
 }
 
 .navbar {
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.12), 0 8px 24px rgba(0, 32, 91, 0.12);
+  border-bottom: 1px solid rgba(141, 189, 255, 0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.28);
 }
 
 .navbar-brand {
@@ -54,7 +65,7 @@ body {
 }
 
 h1, h2, h3 {
-  color: var(--site-navy);
+  color: var(--site-blue);
   letter-spacing: -0.018em;
 }
 
@@ -70,7 +81,7 @@ a {
 
 a:focus-visible,
 button:focus-visible {
-  outline: 3px solid #f4b942;
+  outline: 3px solid #f6c85f;
   outline-offset: 3px;
 }
 
@@ -98,6 +109,7 @@ button:focus-visible {
   max-width: 12ch;
   font-size: clamp(3rem, 8vw, 5.9rem);
   line-height: 0.98;
+  color: #f5f8fd;
 }
 
 .hero-summary {
@@ -110,7 +122,7 @@ button:focus-visible {
 .hero-meta {
   margin-top: 1.3rem;
   font-weight: 650;
-  color: var(--site-navy);
+  color: #c9dcf7;
 }
 
 .hero-actions,
@@ -126,10 +138,10 @@ button:focus-visible {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid var(--site-navy);
+  border: 1px solid var(--site-blue);
   border-radius: 999px;
   padding: 0.55rem 1rem;
-  color: var(--site-navy);
+  color: var(--site-blue);
   font-size: 0.88rem;
   font-weight: 700;
   text-decoration: none;
@@ -139,8 +151,8 @@ button:focus-visible {
 .site-button.primary,
 .site-button:hover,
 .paper-link:hover {
-  background: var(--site-navy);
-  color: #ffffff;
+  background: var(--site-blue);
+  color: #07111f;
   transform: translateY(-1px);
 }
 
@@ -159,7 +171,7 @@ button:focus-visible {
   inset: 1.1rem -1rem -1rem 1.1rem;
   z-index: -1;
   border-radius: 1.25rem;
-  background: linear-gradient(145deg, #dce8f4, #d4ebe7);
+  background: linear-gradient(145deg, rgba(141, 189, 255, 0.38), rgba(99, 215, 202, 0.25));
 }
 
 .hero-photo img {
@@ -169,7 +181,8 @@ button:focus-visible {
   object-fit: cover;
   object-position: center 20%;
   border-radius: 1.25rem;
-  box-shadow: 0 24px 60px rgba(0, 32, 91, 0.2);
+  border: 1px solid rgba(141, 189, 255, 0.2);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.42);
 }
 
 .about-hero {
@@ -191,8 +204,8 @@ button:focus-visible {
 .publication-entry {
   border: 1px solid var(--site-rule);
   border-radius: 0.8rem;
-  background: #ffffff;
-  box-shadow: 0 10px 26px rgba(31, 42, 68, 0.055);
+  background: var(--site-surface);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.2);
 }
 
 .feature-card,
@@ -236,9 +249,10 @@ button:focus-visible {
   display: inline-block;
   margin-bottom: 0.65rem;
   border-radius: 999px;
-  background: #e7f4f2;
+  border: 1px solid rgba(99, 215, 202, 0.25);
+  background: rgba(99, 215, 202, 0.1);
   padding: 0.22rem 0.65rem;
-  color: #0b615b;
+  color: #91eadf;
   font-size: 0.75rem;
   font-weight: 750;
   letter-spacing: 0.04em;
@@ -252,7 +266,7 @@ button:focus-visible {
 
 .timeline-item {
   margin-left: 0.35rem;
-  border-left: 2px solid #c7d5e4;
+  border-left: 2px solid #40536e;
   padding: 0.15rem 0 1.25rem 1.2rem;
 }
 
@@ -272,7 +286,32 @@ button:focus-visible {
 .page-footer {
   margin-top: 4rem;
   border-top: 1px solid var(--site-rule);
-  background: #f2f6fa;
+  background: #081321;
+}
+
+.page-footer a,
+.nav-footer a {
+  color: #b9d8ff;
+}
+
+.quarto-title-meta,
+.description,
+.listing-description,
+.listing-date,
+.quarto-category {
+  color: var(--site-muted);
+}
+
+.quarto-listing-container-default .listing-item,
+.quarto-listing-container-grid .card {
+  border-color: var(--site-rule);
+  background: var(--site-surface);
+}
+
+pre,
+code,
+.sourceCode {
+  border-color: var(--site-rule);
 }
 
 @media (max-width: 860px) {
