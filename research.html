@@ -46,7 +46,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-92b2f9c768c608e965a4f855c10be1d9.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-ef0324864f83adf4ff7a4023209b322a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -76,6 +76,35 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <meta property="og:title" content="Research – Daniel Flores Galiote">
 <meta property="og:description" content="Research interests in analytic number theory and Diophantine equations.">
@@ -151,19 +180,8 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#current-interests" id="toc-current-interests" class="nav-link active" data-scroll-target="#current-interests">Current interests</a>
-  <ul class="collapse">
-  <li><a href="#quantitative-hasse-principle-for-forms-in-many-variables" id="toc-quantitative-hasse-principle-for-forms-in-many-variables" class="nav-link" data-scroll-target="#quantitative-hasse-principle-for-forms-in-many-variables">Quantitative Hasse principle for forms in many variables</a></li>
-  <li><a href="#applications-to-magic-squares-and-multimagic-squares" id="toc-applications-to-magic-squares-and-multimagic-squares" class="nav-link" data-scroll-target="#applications-to-magic-squares-and-multimagic-squares">Applications to magic squares and multimagic squares</a></li>
-  </ul></li>
-  <li><a href="#further-directions" id="toc-further-directions" class="nav-link" data-scroll-target="#further-directions">Further directions</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -192,24 +210,21 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="current-interests" class="level2">
-<h2 class="anchored" data-anchor-id="current-interests">Current interests</h2>
-<p>My research interests lie in analytic number theory, with an emphasis on applications of the Hardy–Littlewood circle method. Naturally this leads to interest in related problems in Fourier analysis, such as pointwise bounds on exponential sums, mean value estimates on exponential sums, and application of the geometry of numbers.</p>
-<section id="quantitative-hasse-principle-for-forms-in-many-variables" class="level3">
-<h3 class="anchored" data-anchor-id="quantitative-hasse-principle-for-forms-in-many-variables">Quantitative Hasse principle for forms in many variables</h3>
-<p>I am interested in quantitative forms of the Hasse principle for homogeneous and weighted-homogeneous equations.</p>
-</section>
-<section id="applications-to-magic-squares-and-multimagic-squares" class="level3">
-<h3 class="anchored" data-anchor-id="applications-to-magic-squares-and-multimagic-squares">Applications to magic squares and multimagic squares</h3>
-<p>I am also interested in Diophantine systems arising from problems in recreational mathematics, including multimagic squares and magic squares of powers.</p>
-</section>
-</section>
-<section id="further-directions" class="level2">
-<h2 class="anchored" data-anchor-id="further-directions">Further directions</h2>
-<p>I am interested in learning more about arithmetic statistics, sieve methods, and additive combinatorics.</p>
+<p>My research lies in analytic number theory and concerns the existence and distribution of integral solutions to systems of polynomial equations. Given homogeneous forms <span class="math inline">\(F_1,\ldots,F_R\)</span> of degrees <span class="math inline">\(d_1,\ldots,d_R\)</span>, a typical problem is to understand the counting function</p>
+<p><span class="math display">\[
+N(P)=\#\left\{\mathbf{x}\in\mathbb{Z}^n:
+\lVert\mathbf{x}\rVert_\infty\leq P,
+F_1(\mathbf{x})=\cdots=F_R(\mathbf{x})=0\right\}.
+\]</span></p>
+<p>In favorable settings, the Hardy–Littlewood circle method yields an asymptotic formula of the shape</p>
+<p><span class="math display">\[
+N(P)=\mathfrak{S}\mathfrak{J}P^{\,n-(d_1+\cdots+d_R)}
++o\!\left(P^{\,n-(d_1+\cdots+d_R)}\right),
+\]</span></p>
+<p>where the singular series <span class="math inline">\(\mathfrak{S}\)</span> and singular integral <span class="math inline">\(\mathfrak{J}\)</span> encode the local arithmetic and real geometry of the system. My work studies quantitative forms of the Hasse principle for homogeneous and weighted-homogeneous equations. This involves pointwise and mean-value estimates for exponential sums, together with techniques from Fourier analysis and the geometry of numbers.</p>
+<p>I have also studied Diophantine systems arising from magic squares, multimagic squares, and magic squares of powers. These problems connect classical questions in recreational mathematics with the analytic theory of systems of equations. Further directions that interest me include arithmetic statistics, sieve methods, and additive combinatorics.</p>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
