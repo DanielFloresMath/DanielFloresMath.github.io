@@ -58,28 +58,28 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "\nDaniel Flores Galiote\n",
+    "title": "Daniel Flores Galiote",
     "section": "",
-    "text": "Analytic number theory\n\n\n\nWelcome to my academic webpage, I am a postdoctoral instructor in the Department of Mathematics at Rice University. I recently finished my PhD at Purdue University under the supervision of Trevor Wooley. I study problems concerning Diophantine equations via the Hardy–Littlewood circle method. In particular, I am interested in the statistical properties of rational and integer solutions to polynomial equations.\n\n\nG. C. Evans Instructor · Department of Mathematics · Rice University\n\n\nView publications Curriculum vitae Contact"
+    "text": "Daniel Flores Galiote\n\n\nWelcome to my academic webpage, I am a postdoctoral instructor in the Department of Mathematics at Rice University. I recently finished my PhD at Purdue University under the supervision of Trevor Wooley. I study problems concerning Diophantine equations via the Hardy–Littlewood circle method. In particular, I am interested in the statistical properties of rational and integer solutions to polynomial equations.\n\n\nG. C. Evans Instructor · Department of Mathematics · Rice University\n\n\nView publications Curriculum vitae Contact"
   },
   {
     "objectID": "index.html#research",
     "href": "index.html#research",
-    "title": "\nDaniel Flores Galiote\n",
+    "title": "Daniel Flores Galiote",
     "section": "Research",
     "text": "Research\nMy research concerns the existence and distribution of integral solutions to systems of polynomial equations. My main tool of choice is the Hardy-Littlewood circle method, which is a powerful tool in analytic number theory which exploits the identity\n\\[\\int_0^1 e^{2 \\pi i \\alpha n} d\\alpha = \\begin{cases} 1 & \\text{if } n=0, \\\\ 0 & \\text{if } n \\in \\mathbb{Z} \\backslash \\{0\\}, \\end{cases},\\]\nand allows one to employ the techniques of Fourier analysis to tackle problems in analytic number theory.\nRead more about my research · View all publications"
   },
   {
     "objectID": "index.html#selected-publications",
     "href": "index.html#selected-publications",
-    "title": "\nDaniel Flores Galiote\n",
+    "title": "Daniel Flores Galiote",
     "section": "Selected publications",
     "text": "Selected publications\n\nAccepted\n\nThe Hasse principle for random homogeneous polynomials in thin sets\nJoint work with Kiseok Yeon. To appear in Mathematika. We make progress towards a conjecture of Coliot-Thélène, which predicts that the Hasse principle holds for all homogeneous polynomials of degree \\(d&gt;3\\) in at least \\(d+1\\) variables. Specifically, we show that if we average over a thin set of polynomials of degree \\(d \\ge 17\\) and at least \\(24d +1\\) variables, then the Hasse principle holds with probability tending to \\(1\\) as the size of the thin set tends to infinity.\n\narXiv PDF\n\n\n\n\nPublished\n\nA circle method approach to \\(K\\)-multimagic squares\nWe study the existence of \\(K\\)-multimagic squares, which are square matrices whose entries are integers and satisfy the condition that if we raise each entry to the \\(k\\)-th power then the resulting matrix is a magic square for all \\(1\\le k\\le K\\). We show that for any \\(K\\ge 2\\), there exist infinitely many \\(K\\)-multimagic squares of size \\(N &gt; 2K(K+1)\\).\nJournal of the London Mathematical Society 112 (2025), e70290.\n\nDOI arXiv PDF"
   },
   {
     "objectID": "index.html#contact",
     "href": "index.html#contact",
-    "title": "\nDaniel Flores Galiote\n",
+    "title": "Daniel Flores Galiote",
     "section": "Contact",
     "text": "Contact\n\n\nInstitution\nDepartment of Mathematics\nRice University\n\n\nEmail\ndf66@rice.edu\n\n\nProfiles\nGitHub · ORCID"
   },
