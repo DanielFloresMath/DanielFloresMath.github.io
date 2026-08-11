@@ -5,14 +5,12 @@ project:
     - "*.qmd"
     - "posts/**/*.qmd"
     - "!notes.qmd"
-  resources:
-    - assets/background.png
 
 website:
   title: "Daniel Flores Galiote"
   site-url: "https://danielfloresmath.github.io"
   description: "Daniel Flores Galiote - analytic number theory, Diophantine equations, and the Hardy-Littlewood circle method."
-  favicon: ProfilePicture.jpg
+  favicon: assets/profile-optimized.jpg
   search: true
   open-graph: true
   navbar:

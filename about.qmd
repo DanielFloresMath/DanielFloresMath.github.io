@@ -16,7 +16,7 @@ For a longer account of this path, see my essay ["What I Needed to Hear Ten Year
 :::
 
 ::: {.hero-photo}
-![](ProfilePicture.jpg){fig-alt="Daniel Flores Galiote in academic regalia"}
+![](assets/profile-optimized.jpg){fig-alt="Daniel Flores Galiote in academic regalia" width="1000" height="1500"}
 :::
 :::
 

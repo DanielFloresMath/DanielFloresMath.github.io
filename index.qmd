@@ -19,7 +19,7 @@ toc: false
 :::
 
 ::: {.hero-photo}
-![](ProfilePicture.jpg){fig-alt="Daniel Flores Galiote in academic regalia"}
+![](assets/profile-optimized.jpg){fig-alt="Daniel Flores Galiote in academic regalia" width="1000" height="1500"}
 :::
 :::
 

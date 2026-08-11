@@ -50,11 +50,11 @@ body {
   background-color: var(--site-paper);
   background-image:
     linear-gradient(rgba(11, 18, 32, 0.85), rgba(11, 18, 32, 0.91)),
-    url("/assets/background.png");
+    url("assets/background-optimized.jpg");
   background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: scroll;
 }
 
 .navbar {
@@ -379,10 +379,6 @@ code,
 }
 
 @media (max-width: 860px) {
-  body {
-    background-attachment: scroll;
-  }
-
   #quarto-content.page-columns {
     display: block !important;
     width: 100%;
