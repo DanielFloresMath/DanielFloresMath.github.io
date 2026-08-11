@@ -3,17 +3,21 @@ title: "Research"
 description: "Research interests in analytic number theory and Diophantine equations."
 ---
 
-## Current interests
+My research lies in analytic number theory and concerns the existence and distribution of integral solutions to systems of polynomial equations. Given homogeneous forms $F_1,\ldots,F_R$ of degrees $d_1,\ldots,d_R$, a typical problem is to understand the counting function
 
-My research interests lie in analytic number theory, with an emphasis on applications of the Hardy--Littlewood circle method. Naturally this leads to interest in related problems in Fourier analysis, such as pointwise bounds on exponential sums, mean value estimates on exponential sums, and application of the geometry of numbers.
+$$
+N(P)=\#\left\{\mathbf{x}\in\mathbb{Z}^n:
+\lVert\mathbf{x}\rVert_\infty\leq P,
+F_1(\mathbf{x})=\cdots=F_R(\mathbf{x})=0\right\}.
+$$
 
-### Quantitative Hasse principle for forms in many variables
-I am interested in quantitative forms of the Hasse principle for homogeneous and weighted-homogeneous equations.
+In favorable settings, the Hardy--Littlewood circle method yields an asymptotic formula of the shape
 
-### Applications to magic squares and multimagic squares
+$$
+N(P)=\mathfrak{S}\mathfrak{J}P^{\,n-(d_1+\cdots+d_R)}
++o\!\left(P^{\,n-(d_1+\cdots+d_R)}\right),
+$$
 
-I am also interested in Diophantine systems arising from problems in recreational mathematics, including multimagic squares and magic squares of powers.
+where the singular series $\mathfrak{S}$ and singular integral $\mathfrak{J}$ encode the local arithmetic and real geometry of the system. My work studies quantitative forms of the Hasse principle for homogeneous and weighted-homogeneous equations. This involves pointwise and mean-value estimates for exponential sums, together with techniques from Fourier analysis and the geometry of numbers.
 
-## Further directions
-
-I am interested in learning more about arithmetic statistics, sieve methods, and additive combinatorics.
+I have also studied Diophantine systems arising from magic squares, multimagic squares, and magic squares of powers. These problems connect classical questions in recreational mathematics with the analytic theory of systems of equations. Further directions that interest me include arithmetic statistics, sieve methods, and additive combinatorics.

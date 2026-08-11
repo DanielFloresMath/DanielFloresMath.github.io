@@ -322,6 +322,51 @@ code,
   border-color: var(--site-rule);
 }
 
+.navbar-nav.ms-auto .nav-item.compact .nav-link {
+  position: relative;
+}
+
+.navbar-nav.ms-auto .nav-item.compact .nav-link::after {
+  position: absolute;
+  top: calc(100% + 0.45rem);
+  right: 0;
+  z-index: 1100;
+  padding: 0.35rem 0.55rem;
+  border: 1px solid var(--site-rule);
+  border-radius: 0.35rem;
+  background: var(--site-surface);
+  color: var(--site-ink);
+  box-shadow: 0 0.35rem 1rem rgba(0, 0, 0, 0.28);
+  font-size: 0.78rem;
+  font-weight: 500;
+  line-height: 1;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(-0.2rem);
+  transition: opacity 120ms ease, transform 120ms ease;
+}
+
+.navbar-nav.ms-auto .nav-link[href$="CV_DF.pdf"]::after {
+  content: "Curriculum vitae";
+}
+
+.navbar-nav.ms-auto .nav-link[href="https://github.com/DanielFloresMath"]::after {
+  content: "GitHub";
+}
+
+.navbar-nav.ms-auto .nav-link[href^="mailto:"]::after {
+  content: "Email";
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .navbar-nav.ms-auto .nav-item.compact .nav-link:hover::after,
+  .navbar-nav.ms-auto .nav-item.compact .nav-link:focus-visible::after {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @media (max-width: 860px) {
   body {
     background-attachment: scroll;
