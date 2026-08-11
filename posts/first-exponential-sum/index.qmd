@@ -1,7 +1,7 @@
 ---
 title: "A first exponential sum estimate"
 description: "A short example illustrating notation and equation cross-references in a mathematical post."
-author: "Daniel Flores"
+author: "Daniel Flores Galiote"
 date: 2026-08-10
 categories: [analytic number theory, exponential sums]
 draft: true
@@ -35,4 +35,3 @@ $$
 where $\|\alpha\|$ denotes the distance from $\alpha$ to the nearest integer. This elementary estimate already exhibits a basic feature of the circle method: an exponential sum can be large only when its frequency lies close to a rational point with small denominator.
 
 > This is a private draft created to test the blog layout and mathematical rendering. Replace it with an authored post or remove `draft: true` only when it is ready for publication.
-

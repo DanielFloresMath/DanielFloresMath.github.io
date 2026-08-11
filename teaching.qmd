@@ -6,6 +6,14 @@ description: "Teaching, grading, and mentoring experience."
 ## Teaching
 
 ::: {.timeline-item}
+### Instructor of Record
+
+MATH 356, Abstract Algebra I, Rice University (Fall 2026).
+
+All course information can be found on the [Rice Canvas course page](https://canvas.rice.edu/).
+:::
+
+::: {.timeline-item}
 ### Lecturer
 
 MA 16010, Applied Calculus I, Purdue University (Fall 2025).
@@ -29,9 +37,10 @@ MA 16010, Applied Calculus I, Purdue University (Fall 2025).
 
 ## Mentoring and service
 
+- Teaching assistant to Tim Browning for *Points on Varieties*, Séminaire de Mathématiques Supérieures 2026: Universal Statistics in Number Theory, CRM/Université de Montréal (May 2026)
+- Member, Algebra Seminar Committee, Rice University (2026--present)
 - Graduate mathematics mentor, Polymath Jr. 2025, under the direction of Steven J. Miller (Summer 2025)
 - Graduate mentor, AWM Math Mentor Program, Purdue University (Fall 2024--Spring 2025)
 - Graduate mentor, Mathematics Mentoring Program, Purdue University (Fall 2023)
 - Graduate mentor, Summer Research Opportunities Program, Purdue University (Summer 2022)
 - Member, Purdue Mathematics Graduate Representatives (Fall 2022)
-

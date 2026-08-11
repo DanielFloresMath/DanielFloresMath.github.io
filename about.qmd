@@ -10,13 +10,13 @@ toc: false
 
 I was born in Ecatepec de Morelos, Mexico, and moved to the United States at the age of four. Growing up as a first-generation immigrant and Dreamer shaped both my perspective and my commitment to mathematics and education.
 
-I began my higher education at Lone Star College--North Harris, where I earned an Associate of Science degree in 2016. I then studied mathematics at the University of Houston, completing a Bachelor of Science degree in 2019 and discovering my interest in number theory. At Purdue University, I worked under Trevor Wooley and developed my research program in analytic number theory and the Hardy--Littlewood circle method.
+I began my higher education at Lone Star College--North Harris, where I earned an Associate of Science degree in 2016. I then studied mathematics at the University of Houston, completing a Bachelor of Science degree in 2019 and discovering my interest in number theory. I completed my PhD in mathematics at Purdue University in spring 2026 under the supervision of Trevor Wooley, developing my research program in analytic number theory and the Hardy--Littlewood circle method. I am currently a G. C. Evans Instructor in the Department of Mathematics at Rice University.
 
 For a longer account of this path, see my essay ["What I Needed to Hear Ten Years Ago: A Dreamer's Journey in Math"](https://maa.org/math-values/what-i-needed-to-hear-ten-years-ago-a-dreamers-journey-in-math/) for the Mathematical Association of America.
 :::
 
 ::: {.hero-photo}
-![](ProfilePicture.jpg){fig-alt="Daniel Flores in academic regalia"}
+![](ProfilePicture.jpg){fig-alt="Daniel Flores Galiote in academic regalia"}
 :::
 :::
 
@@ -30,4 +30,3 @@ Outside mathematics, I value time with my wife and son. We enjoy playing video g
 - [GitHub](https://github.com/DanielFloresMath)
 - [ORCID](https://orcid.org/0009-0003-7623-2959)
 - [Email](mailto:df66@rice.edu)
-

@@ -3,23 +3,17 @@ title: "Research"
 description: "Research interests in analytic number theory and Diophantine equations."
 ---
 
-My research lies in analytic number theory, with an emphasis on the Hardy--Littlewood circle method and its applications to Diophantine equations. A recurring theme is to understand when local solubility predicts the existence and distribution of integral solutions.
-
 ## Current interests
 
-### Forms in many variables
+My research interests lie in analytic number theory, with an emphasis on applications of the Hardy--Littlewood circle method. Naturally this leads to interest in related problems in Fourier analysis, such as pointwise bounds on exponential sums, mean value estimates on exponential sums, and application of the geometry of numbers.
 
-I study quantitative forms of the Hasse principle for homogeneous and weighted-homogeneous equations. This includes problems in which groups of variables occur with different weights and problems in which the coefficient vector is restricted to a thin set.
+### Quantitative Hasse principle for forms in many variables
+I am interested in quantitative forms of the Hasse principle for homogeneous and weighted-homogeneous equations.
 
-### Exponential sums and the circle method
+### Applications to magic squares and multimagic squares
 
-My work uses estimates for exponential sums, mean-value methods, and geometric information about singular loci to control the minor arcs. On the major arcs, I study the singular series and singular integral that encode the local densities.
-
-### Additive and combinatorial applications
-
-I am also interested in Diophantine systems arising from combinatorial configurations, including multimagic squares and magic squares of powers.
+I am also interested in Diophantine systems arising from problems in recreational mathematics, including multimagic squares and magic squares of powers.
 
 ## Further directions
 
-Related interests include arithmetic statistics, sieve methods, additive combinatorics, and exponential-sum estimates beyond classical polynomial settings.
-
+I am interested in learning more about arithmetic statistics, sieve methods, and additive combinatorics.

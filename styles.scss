@@ -47,6 +47,14 @@ body {
   line-height: 1.7;
   letter-spacing: 0.002em;
   overflow-x: clip;
+  background-color: var(--site-paper);
+  background-image:
+    linear-gradient(rgba(11, 18, 32, 0.85), rgba(11, 18, 32, 0.91)),
+    url("/assets/background.png");
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .navbar {
@@ -315,6 +323,10 @@ code,
 }
 
 @media (max-width: 860px) {
+  body {
+    background-attachment: scroll;
+  }
+
   #quarto-content.page-columns {
     display: block !important;
     width: 100%;

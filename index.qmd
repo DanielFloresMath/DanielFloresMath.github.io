@@ -7,11 +7,11 @@ toc: false
 ::: {.hero-copy}
 <p class="hero-kicker">Analytic number theory</p>
 
-<h1 class="hero-title">Daniel Flores</h1>
+<h1 class="hero-title">Daniel Flores Galiote</h1>
 
-<p class="hero-summary">I study Diophantine equations through the Hardy--Littlewood circle method, with particular interests in weighted forms, exponential sums, arithmetic statistics, and additive questions.</p>
+<p class="hero-summary">Welcome to my academic webpage, I am a postdoctoral instructor in the Department of Mathematics at Rice University. I recently finished my PhD at Purdue University under the supervision of Trevor Wooley. I study problems concerning Diophantine equations via the Hardy--Littlewood circle method. In particular, I am interested in the statistical properties of rational and integer solutions to polynomial equations.</p>
 
-<p class="hero-meta">Department of Mathematics · Rice University</p>
+<p class="hero-meta">G. C. Evans Instructor · Department of Mathematics · Rice University</p>
 
 ::: {.hero-actions}
 <a class="site-button primary" href="publications.html">View publications</a>
@@ -21,42 +21,28 @@ toc: false
 :::
 
 ::: {.hero-photo}
-![](ProfilePicture.jpg){fig-alt="Daniel Flores in academic regalia"}
+![](ProfilePicture.jpg){fig-alt="Daniel Flores Galiote in academic regalia"}
 :::
 :::
 
 ## Research
 
-My work centers on analytic methods for counting integral solutions of polynomial equations. I am especially interested in settings where the geometry or weighting of the variables requires refinements of the classical circle method.
+My research concerns the existence and distribution of integral solutions to systems of polynomial equations. My main tool of choice is the Hardy-Littlewood circle method, which is a powerful tool in analytic number theory which exploits the identity
 
-::: {.feature-grid}
-::: {.feature-card}
-### Circle method
+$$\int_0^1 e^{2 \pi i \alpha n} d\alpha = \begin{cases} 1 & \text{if } n=0, \\ 0 & \text{if } n \in \mathbb{Z} \backslash \{0\}, \end{cases},$$
 
-Asymptotic formulae, major and minor arc analysis, and systems of Diophantine equations.
-:::
+and allows one to employ the techniques of Fourier analysis to tackle problems in analytic number theory.
 
-::: {.feature-card}
-### Exponential sums
+[Read more about my research](research.qmd) · [View all publications](publications.qmd)
 
-Weyl-type estimates, mean values, and applications to additive problems.
-:::
-
-::: {.feature-card}
-### Arithmetic statistics
-
-Local-to-global principles and the distribution of soluble polynomial equations in families.
-:::
-:::
-
-## Recent work
+## Selected publications
 
 ::: {.publication-entry}
-<span class="publication-status">Preprint</span>
+<span class="publication-status">Accepted</span>
 
-### The Hasse principle for homogeneous polynomials with random coefficients over thin sets II
+### The Hasse principle for random homogeneous polynomials in thin sets
 
-With Kiseok Yeon. We study the density of coefficient vectors on a thin algebraic set for which the associated homogeneous equation satisfies the Hasse principle.
+Joint work with Kiseok Yeon. To appear in *Mathematika*. We make progress towards a conjecture of Coliot-Thélène, which predicts that the Hasse principle holds for all homogeneous polynomials of degree $d>3$ in at least $d+1$ variables. Specifically, we show that if we average over a thin set of polynomials of degree $d \ge 17$ and at least $24d +1$ variables, then the Hasse principle holds with probability tending to $1$ as the size of the thin set tends to infinity.
 
 ::: {.paper-links}
 <a class="paper-link" href="https://arxiv.org/abs/2506.01291">arXiv</a>
@@ -68,6 +54,8 @@ With Kiseok Yeon. We study the density of coefficient vectors on a thin algebrai
 <span class="publication-status">Published</span>
 
 ### A circle method approach to $K$-multimagic squares
+
+We study the existence of $K$-multimagic squares, which are square matrices whose entries are integers and satisfy the condition that if we raise each entry to the $k$-th power then the resulting matrix is a magic square for all $1\le k\le K$. We show that for any $K\ge 2$, there exist infinitely many $K$-multimagic squares of size $N > 2K(K+1)$.
 
 *Journal of the London Mathematical Society* **112** (2025), e70290.
 

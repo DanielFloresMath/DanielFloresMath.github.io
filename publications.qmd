@@ -1,17 +1,19 @@
 ---
 title: "Publications"
-description: "Publications and preprints by Daniel Flores."
+description: "Publications and preprints by Daniel Flores Galiote."
 toc: false
 ---
 
-## Preprints
+## Accepted articles
 
 ::: {.publication-entry}
-<span class="publication-status">Preprint · 2025</span>
+<span class="publication-status">Accepted · 2026</span>
 
-### The Hasse principle for homogeneous polynomials with random coefficients over thin sets II
+### The Hasse principle for random homogeneous polynomials in thin sets
 
-Daniel Flores and Kiseok Yeon.
+Daniel Flores Galiote and Kiseok Yeon.
+
+To appear in *Mathematika*.
 
 ::: {.paper-links}
 <a class="paper-link" href="https://arxiv.org/abs/2506.01291">arXiv</a>
@@ -19,12 +21,43 @@ Daniel Flores and Kiseok Yeon.
 :::
 :::
 
+## Preprints
+
+::: {.publication-entry}
+<span class="publication-status">Preprint · 2025</span>
+
+### Constructions of sequences of alternating sum and difference dominated sets
+
+Yorick Herrmann, Connor Hill, Merlin Phillips, Daniel Flores Galiote, Steven J. Miller, and Steven Senger.
+
+::: {.paper-links}
+<a class="paper-link" href="https://arxiv.org/abs/2509.00792">arXiv</a>
+:::
+:::
+
 ## Published articles
+
+::: {.publication-entry}
+<span class="publication-status">Published · 2026</span>
+
+### Additional constructions of sequences of alternating sum and difference dominated sets
+
+Yorick Herrmann, Connor Hill, Merlin Phillips, Daniel Flores Galiote, Steven J. Miller, and Steven Senger.
+
+*Integers* **26** (2026), A88.
+
+::: {.paper-links}
+<a class="paper-link" href="https://math.colgate.edu/~integers/vol26.html">Journal</a>
+<a class="paper-link" href="https://arxiv.org/abs/2509.12829">arXiv</a>
+:::
+:::
 
 ::: {.publication-entry}
 <span class="publication-status">Published · 2025</span>
 
 ### A circle method approach to $K$-multimagic squares
+
+Daniel Flores Galiote.
 
 *Journal of the London Mathematical Society* **112** (2025), e70290.
 
@@ -40,6 +73,8 @@ Daniel Flores and Kiseok Yeon.
 
 ### Existence of $K$-multimagic squares and magic squares of $k$th powers with distinct entries
 
+Daniel Flores Galiote.
+
 *Bulletin of the Australian Mathematical Society* **112** (2025), no. 3, 441--448.
 
 ::: {.paper-links}
@@ -53,6 +88,8 @@ Daniel Flores and Kiseok Yeon.
 
 ### A quantitative Hasse principle for weighted quartic forms
 
+Daniel Flores Galiote.
+
 *Mathematika* **70** (2024), no. 1, e12236.
 
 ::: {.paper-links}
@@ -60,4 +97,3 @@ Daniel Flores and Kiseok Yeon.
 <a class="paper-link" href="Publications/Quantitative_Hasse_Principle_for_a_Certain_Family_of_Weighted_Quartic_Forms.pdf">PDF</a>
 :::
 :::
-
