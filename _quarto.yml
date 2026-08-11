@@ -3,8 +3,8 @@ project:
   output-dir: _site
   render:
     - "*.qmd"
-    - "posts/**/*.qmd"
     - "!notes.qmd"
+    - "!posts/**"
 
 website:
   title: "Daniel Flores Galiote"

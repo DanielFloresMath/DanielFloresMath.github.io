@@ -1,6 +1,9 @@
 ---
 page-layout: full
 toc: false
+format:
+  html:
+    include-in-header: includes/person-jsonld.html
 ---
 
 ::: {.hero-grid}
@@ -70,8 +73,9 @@ We study the existence of $K$-multimagic squares, which are square matrices whos
 ::: {.contact-card}
 ### Institution
 
-Department of Mathematics  
-Rice University
+Department of Mathematics<br>
+Rice University<br>
+Herman Brown Hall 450
 :::
 
 ::: {.contact-card}
