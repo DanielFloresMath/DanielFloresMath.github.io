@@ -24,6 +24,21 @@ To appear in *Mathematika*.
 ## Preprints
 
 ::: {.publication-entry}
+<span class="publication-status">Submitted · 2026</span>
+
+### On weighted forms in many variables
+
+Daniel Flores Galiote and Kiseok Yeon.
+
+Submitted. arXiv:2608.28774 [math.NT].
+
+::: {.paper-links}
+<a class="paper-link" href="https://arxiv.org/abs/2608.28774">arXiv</a>
+<a class="paper-link" href="https://arxiv.org/pdf/2608.28774">PDF</a>
+:::
+:::
+
+::: {.publication-entry}
 <span class="publication-status">Preprint · 2025</span>
 
 ### Constructions of sequences of alternating sum and difference dominated sets
@@ -95,5 +110,21 @@ Daniel Flores Galiote.
 ::: {.paper-links}
 <a class="paper-link" href="https://doi.org/10.1112/mtk.12236">DOI</a>
 <a class="paper-link" href="Publications/Quantitative_Hasse_Principle_for_a_Certain_Family_of_Weighted_Quartic_Forms.pdf">PDF</a>
+:::
+:::
+
+## Doctoral thesis
+
+::: {.publication-entry}
+<span class="publication-status">PhD thesis · 2026</span>
+
+### Applications of the Hardy-Littlewood circle method to forms in many variables
+
+Daniel Flores Galiote.
+
+PhD thesis, Purdue University, 2026. Advisor: Trevor Wooley.
+
+::: {.paper-links}
+<a class="paper-link" href="https://doi.org/10.25394/PGS.32013057">Thesis (Purdue repository)</a>
 :::
 :::

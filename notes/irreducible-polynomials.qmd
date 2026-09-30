@@ -1,0 +1,136 @@
+---
+title: "Irreducible polynomials over finite fields"
+description: "The factorization of x^(p^n) - x over a finite field and the enumeration of monic irreducible polynomials."
+toc: true
+---
+
+[All notes](../notes.qmd)
+
+The purpose of this note is to explain why $x^{p^n}-x$ is the product of all monic irreducible polynomials in $\mathbb{F}_p[x]$ whose degrees divide $n$. Comparing degrees and applying Möbius inversion then gives the exact number of monic irreducible polynomials of any prescribed degree.
+
+Throughout, $p$ is a prime and $d,n$ are positive integers. We regard all finite fields as subfields of a fixed algebraic closure $\overline{\mathbb{F}}_p$. In particular, $\mathbb{F}_{p^m}$ denotes the field consisting of the roots of $x^{p^m}-x$ in this algebraic closure.
+
+## Two preliminary lemmas
+
+### Lemma 1
+
+Over any field, $x^d-1$ divides $x^n-1$ if and only if $d$ divides $n$.
+
+*Proof.* If $n=dq$, the geometric-series identity gives
+
+$$
+\begin{aligned}
+(x^d-1)\sum_{i=0}^{q-1}x^{di}
+&=\sum_{i=1}^{q}x^{di}-\sum_{i=0}^{q-1}x^{di}\\
+&=x^{dq}-1=x^n-1.
+\end{aligned}
+$$
+
+Conversely, write $n=dq+r$, where $0\leq r<d$. Then
+
+$$
+x^n-1=x^r(x^{dq}-1)+(x^r-1).
+$$
+
+If $x^d-1$ divides $x^n-1$, it therefore divides $x^r-1$. For $0<r<d$, this is impossible by comparison of degrees. Thus $r=0$, so $d\mid n$. $\square$
+
+### Lemma 2
+
+We have $\mathbb{F}_{p^d}\subseteq\mathbb{F}_{p^n}$ if and only if $d\mid n$.
+
+*Proof.* Suppose first that
+
+$$
+\mathbb{F}_p\subseteq\mathbb{F}_{p^d}\subseteq\mathbb{F}_{p^n}.
+$$
+
+The tower law yields
+
+$$
+n=[\mathbb{F}_{p^n}:\mathbb{F}_p]
+=[\mathbb{F}_{p^n}:\mathbb{F}_{p^d}]
+[\mathbb{F}_{p^d}:\mathbb{F}_p]
+=[\mathbb{F}_{p^n}:\mathbb{F}_{p^d}]d,
+$$
+
+and hence $d\mid n$.
+
+Conversely, suppose that $d\mid n$. The geometric-series identity from Lemma 1, evaluated at $p$, gives $p^d-1\mid p^n-1$. Applying Lemma 1 to these positive integers, and then multiplying the resulting polynomial identity by $x$, gives
+
+$$
+\begin{aligned}
+p^d-1\mid p^n-1
+&\Longrightarrow x^{p^d-1}-1\mid x^{p^n-1}-1\\
+&\Longrightarrow x^{p^d}-x\mid x^{p^n}-x.
+\end{aligned}
+$$
+
+Every root of $x^{p^d}-x$ is consequently a root of $x^{p^n}-x$. By our realization of the finite fields inside $\overline{\mathbb{F}}_p$, this proves the required inclusion. $\square$
+
+## Which irreducible polynomials divide $x^{p^n}-x$?
+
+### Lemma 3
+
+Let $f\in\mathbb{F}_p[x]$ be a monic irreducible polynomial of degree $d$. Then $f$ divides $x^{p^n}-x$ if and only if $d\mid n$.
+
+*Proof.* Choose a root $\alpha\in\overline{\mathbb{F}}_p$ of $f$. Since $f$ is the minimal polynomial of $\alpha$ over $\mathbb{F}_p$, the field $\mathbb{F}_p(\alpha)$ has degree $d$ over $\mathbb{F}_p$ and therefore has $p^d$ elements. Every element of this field satisfies $a^{p^d}=a$, so, within the fixed algebraic closure,
+
+$$
+\mathbb{F}_p(\alpha)=\mathbb{F}_{p^d}.
+$$
+
+If $f\mid x^{p^n}-x$, then $\alpha\in\mathbb{F}_{p^n}$. Consequently $\mathbb{F}_{p^d}\subseteq\mathbb{F}_{p^n}$, and Lemma 2 gives $d\mid n$.
+
+Conversely, if $d\mid n$, Lemma 2 gives
+
+$$
+\alpha\in\mathbb{F}_{p^d}\subseteq\mathbb{F}_{p^n}.
+$$
+
+Thus $\alpha^{p^n}-\alpha=0$. Since the minimal polynomial of $\alpha$ divides every polynomial over $\mathbb{F}_p$ that vanishes at $\alpha$, it follows that $f\mid x^{p^n}-x$. $\square$
+
+## The factorization theorem
+
+### Theorem 1
+
+Let $\mathcal{F}_{p,n}$ be the set of monic irreducible polynomials of degree $n$ in $\mathbb{F}_p[x]$. Then
+
+$$
+x^{p^n}-x
+=\prod_{d\mid n}\left(\prod_{f\in\mathcal{F}_{p,d}}f(x)\right).
+$$
+
+*Proof.* By Lemma 3, the monic irreducible factors of $x^{p^n}-x$ are precisely those belonging to $\mathcal{F}_{p,d}$ for some $d\mid n$. Moreover, in characteristic $p$,
+
+$$
+\frac{d}{dx}(x^{p^n}-x)=-1.
+$$
+
+Hence $x^{p^n}-x$ is squarefree, so each irreducible factor occurs exactly once. Both sides are monic, and the claimed identity follows from unique factorization in $\mathbb{F}_p[x]$. $\square$
+
+## Counting monic irreducible polynomials
+
+### Corollary 1
+
+Let $\phi_p(n)$ denote the number of monic irreducible polynomials of degree $n$ in $\mathbb{F}_p[x]$. For every $n\geq1$,
+
+$$
+\phi_p(n)=\frac{1}{n}\sum_{d\mid n}\mu(d)p^{n/d},
+$$
+
+where $\mu$ is the Möbius function.
+
+*Proof.* Comparing degrees in Theorem 1 gives
+
+$$
+p^n=\sum_{d\mid n}d\lvert\mathcal{F}_{p,d}\rvert
+=\sum_{d\mid n}d\phi_p(d).
+$$
+
+Möbius inversion therefore yields
+
+$$
+n\phi_p(n)=\sum_{d\mid n}\mu(d)p^{n/d}.
+$$
+
+Dividing by $n$ proves the formula. $\square$

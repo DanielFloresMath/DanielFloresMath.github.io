@@ -20,4 +20,6 @@ $$
 
 where the singular series $\mathfrak{S}$ and singular integral $\mathfrak{J}$ encode the local arithmetic and real geometry of the system. My work studies quantitative forms of the Hasse principle for homogeneous and weighted-homogeneous equations. This involves pointwise and mean-value estimates for exponential sums, together with techniques from Fourier analysis and the geometry of numbers.
 
+In my recent preprint [*On weighted forms in many variables*](https://arxiv.org/abs/2608.28774), joint with Kiseok Yeon, we obtain asymptotic formulae for integral zeros of weighted forms in boxes scaled according to their weights, under explicit dimension hypotheses.
+
 I have also studied Diophantine systems arising from magic squares, multimagic squares, and magic squares of powers. These problems connect classical questions in recreational mathematics with the analytic theory of systems of equations. Further directions that interest me include arithmetic statistics, sieve methods, and additive combinatorics.

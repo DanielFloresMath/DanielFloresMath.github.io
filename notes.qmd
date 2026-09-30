@@ -1,15 +1,14 @@
 ---
 title: "Notes"
-description: "Short expository posts on analytic number theory and related mathematics."
-listing:
-  contents: posts
-  sort: "date desc"
-  type: default
-  categories: true
-  feed: true
+description: "Auxiliary and expository notes on mathematics."
 page-layout: full
 toc: false
 ---
 
-This section collects short expository posts, mathematical observations, and notes on analytic number theory. Draft posts are visible in the local preview but are omitted from the published site.
+This section collects auxiliary and expository notes on mathematics.
 
+## Algebra
+
+[Irreducible polynomials over finite fields](notes/irreducible-polynomials.qmd)
+
+Why $x^{p^n}-x$ is the product of the monic irreducible polynomials over $\mathbb{F}_p$ whose degrees divide $n$, and how Möbius inversion gives an exact formula for their number.

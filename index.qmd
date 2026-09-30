@@ -39,6 +39,19 @@ and allows one to employ the techniques of Fourier analysis to tackle problems i
 ## Selected publications
 
 ::: {.publication-entry}
+<span class="publication-status">Submitted · 2026</span>
+
+### On weighted forms in many variables
+
+Joint work with Kiseok Yeon. We use the Hardy--Littlewood circle method to count integral zeros of weighted forms with two distinct coprime weights. Under an explicit condition on the number of variables and the dimension of the singular locus, we obtain an asymptotic formula in boxes scaled according to the weights. The leading constant is a product of local densities and is positive under nonsingular local solubility, yielding an integral Hasse principle in sufficiently many variables.
+
+::: {.paper-links}
+<a class="paper-link" href="https://arxiv.org/abs/2608.28774">arXiv</a>
+<a class="paper-link" href="https://arxiv.org/pdf/2608.28774">PDF</a>
+:::
+:::
+
+::: {.publication-entry}
 <span class="publication-status">Accepted</span>
 
 ### The Hasse principle for random homogeneous polynomials in thin sets

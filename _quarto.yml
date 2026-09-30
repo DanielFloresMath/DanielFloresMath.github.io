@@ -3,7 +3,7 @@ project:
   output-dir: _site
   render:
     - "*.qmd"
-    - "!notes.qmd"
+    - "notes/**/*.qmd"
     - "!posts/**"
 
 website:
@@ -26,6 +26,8 @@ website:
         href: talks.qmd
       - text: Teaching
         href: teaching.qmd
+      - text: Notes
+        href: notes.qmd
       - text: About
         href: about.qmd
     right:

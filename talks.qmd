@@ -6,6 +6,12 @@ description: "Selected research and expository talks."
 ## Research talks
 
 ::: {.timeline-item}
+### On weighted forms in many variables
+
+- Analysis Seminar, Rice University (September 8, 2026)
+:::
+
+::: {.timeline-item}
 ### The Hasse principle for random homogeneous polynomials in thin sets
 
 - AMS Special Session on Recent Trends in Analytic Number Theory II, Joint Mathematics Meetings, Washington, DC (January 2026)
