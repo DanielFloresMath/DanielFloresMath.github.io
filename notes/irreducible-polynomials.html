@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="The factorization of x(pn) - x over a finite field and the enumeration of monic irreducible polynomials.">
 
-<title>Daniel Flores Galiote</title>
+<title>Irreducible polynomials over finite fields – Daniel Flores Galiote</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -29,23 +30,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./assets/profile-optimized.jpg" rel="icon" type="image/jpeg">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-85cf0b74d0849ba861ee1a570d4e5a5c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../assets/profile-optimized.jpg" rel="icon" type="image/jpeg">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-85cf0b74d0849ba861ee1a570d4e5a5c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -74,47 +75,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ProfilePage",
-  "url": "https://danielfloresmath.github.io/",
-  "mainEntity": {
-    "@type": "Person",
-    "@id": "https://danielfloresmath.github.io/#person",
-    "name": "Daniel Flores Galiote",
-    "url": "https://danielfloresmath.github.io/",
-    "image": "https://danielfloresmath.github.io/assets/profile-optimized.jpg",
-    "jobTitle": "G. C. Evans Instructor",
-    "worksFor": {
-      "@type": "CollegeOrUniversity",
-      "name": "Rice University",
-      "url": "https://www.rice.edu/"
-    },
-    "workLocation": {
-      "@type": "Place",
-      "name": "Herman Brown Hall 450"
-    },
-    "alumniOf": {
-      "@type": "CollegeOrUniversity",
-      "name": "Purdue University",
-      "url": "https://www.purdue.edu/"
-    },
-    "sameAs": [
-      "https://orcid.org/0009-0003-7623-2959",
-      "https://github.com/DanielFloresMath",
-      "https://www.linkedin.com/in/daniel-flores-galiote-8b4995b6/"
-    ],
-    "knowsAbout": [
-      "Analytic number theory",
-      "Diophantine equations",
-      "Hardy-Littlewood circle method",
-      "Magic squares",
-      "Multimagic squares"
-    ]
-  }
-}
-</script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
@@ -146,11 +106,9 @@ window.Quarto = {
 };
 </script>
 
-<meta property="og:title" content="Daniel Flores Galiote">
-<meta property="og:description" content="Daniel Flores Galiote - analytic number theory, Diophantine equations, and the Hardy-Littlewood circle method.">
-<meta property="og:image" content="https://danielfloresmath.github.io/assets/profile-optimized.jpg">
+<meta property="og:title" content="Irreducible polynomials over finite fields – Daniel Flores Galiote">
+<meta property="og:description" content="The factorization of x(pn) - x over a finite field and the enumeration of monic irreducible polynomials.">
 <meta property="og:site_name" content="Daniel Flores Galiote">
-<meta property="og:image:alt" content="Daniel Flores Galiote in academic regalia">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -160,7 +118,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Daniel Flores Galiote</span>
     </a>
   </div>
@@ -171,37 +129,37 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./research.html"> 
+    <a class="nav-link" href="../research.html"> 
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./publications.html"> 
+    <a class="nav-link" href="../publications.html"> 
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./talks.html"> 
+    <a class="nav-link" href="../talks.html"> 
 <span class="menu-text">Talks</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./teaching.html"> 
+    <a class="nav-link" href="../teaching.html"> 
 <span class="menu-text">Teaching</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./notes.html"> 
+    <a class="nav-link" href="../notes.html"> 
 <span class="menu-text">Notes</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="./CV_DF.pdf"> <i class="bi bi-file-earmark-person" role="img" aria-label="Curriculum vitae">
+    <a class="nav-link" href="../CV_DF.pdf"> <i class="bi bi-file-earmark-person" role="img" aria-label="Curriculum vitae">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -228,94 +186,164 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#two-preliminary-lemmas" id="toc-two-preliminary-lemmas" class="nav-link active" data-scroll-target="#two-preliminary-lemmas">Two preliminary lemmas</a>
+  <ul class="collapse">
+  <li><a href="#lemma-1" id="toc-lemma-1" class="nav-link" data-scroll-target="#lemma-1">Lemma 1</a></li>
+  <li><a href="#lemma-2" id="toc-lemma-2" class="nav-link" data-scroll-target="#lemma-2">Lemma 2</a></li>
+  </ul></li>
+  <li><a href="#which-irreducible-polynomials-divide-xpn-x" id="toc-which-irreducible-polynomials-divide-xpn-x" class="nav-link" data-scroll-target="#which-irreducible-polynomials-divide-xpn-x">Which irreducible polynomials divide <span class="math inline">\(x^{p^n}-x\)</span>?</a>
+  <ul class="collapse">
+  <li><a href="#lemma-3" id="toc-lemma-3" class="nav-link" data-scroll-target="#lemma-3">Lemma 3</a></li>
+  </ul></li>
+  <li><a href="#the-factorization-theorem" id="toc-the-factorization-theorem" class="nav-link" data-scroll-target="#the-factorization-theorem">The factorization theorem</a>
+  <ul class="collapse">
+  <li><a href="#theorem-1" id="toc-theorem-1" class="nav-link" data-scroll-target="#theorem-1">Theorem 1</a></li>
+  </ul></li>
+  <li><a href="#counting-monic-irreducible-polynomials" id="toc-counting-monic-irreducible-polynomials" class="nav-link" data-scroll-target="#counting-monic-irreducible-polynomials">Counting monic irreducible polynomials</a>
+  <ul class="collapse">
+  <li><a href="#corollary-1" id="toc-corollary-1" class="nav-link" data-scroll-target="#corollary-1">Corollary 1</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Irreducible polynomials over finite fields</h1>
+</div>
 
-
-
-<div class="hero-grid">
-<div class="hero-copy">
-<div class="hero-title" role="heading" aria-level="1">
-Daniel Flores Galiote
-</div>
-<p class="hero-summary">
-Welcome to my academic webpage, I am a postdoctoral instructor in the Department of Mathematics at Rice University under the mentorship of <a href="https://math.rice.edu/~av15/">Anthony Várilly-Alvarado</a>. I recently finished my PhD at Purdue University under the supervision of <a href="https://www.math.purdue.edu/~twooley/">Trevor Wooley</a>. I study problems concerning Diophantine equations via the Hardy–Littlewood circle method. In particular, I am interested in the statistical properties of rational and integer solutions to polynomial equations.
-</p>
-<p class="hero-meta">
-G. C. Evans Instructor · Department of Mathematics · Rice University
-</p>
-<div class="hero-actions">
-<p><a class="site-button primary" href="publications.html">View publications</a> <a class="site-button" href="CV_DF.pdf" target="_blank">Curriculum vitae</a> <a class="site-button" href="mailto:df66@rice.edu">Contact</a></p>
-</div>
-</div>
-<div class="hero-photo">
-<p><img src="assets/profile-optimized.jpg" alt="Daniel Flores Galiote in academic regalia" width="1000" height="1500"></p>
-</div>
-</div>
-<section id="research" class="level2">
-<h2 class="anchored" data-anchor-id="research">Research</h2>
-<p>My research concerns the existence and distribution of integral solutions to systems of polynomial equations. My main tool of choice is the Hardy-Littlewood circle method, which is a powerful tool in analytic number theory which exploits the identity</p>
-<p><span class="math display">\[\int_0^1 e^{2 \pi i \alpha n} d\alpha = \begin{cases} 1 &amp; \text{if } n=0, \\ 0 &amp; \text{if } n \in \mathbb{Z} \backslash \{0\}, \end{cases},\]</span></p>
-<p>and allows one to employ the techniques of Fourier analysis to tackle problems in analytic number theory.</p>
-<p><a href="./research.html">Read more about my research</a> · <a href="./publications.html">View all publications</a></p>
-</section>
-<section id="selected-publications" class="level2">
-<h2 class="anchored" data-anchor-id="selected-publications">Selected publications</h2>
-<div class="publication-entry">
-<p><span class="publication-status">Submitted · 2026</span></p>
-<section id="on-weighted-forms-in-many-variables" class="level3">
-<h3 class="anchored" data-anchor-id="on-weighted-forms-in-many-variables">On weighted forms in many variables</h3>
-<p>Joint work with Kiseok Yeon. We use the Hardy–Littlewood circle method to count integral zeros of weighted forms with two distinct coprime weights. Under an explicit condition on the number of variables and the dimension of the singular locus, we obtain an asymptotic formula in boxes scaled according to the weights. The leading constant is a product of local densities and is positive under nonsingular local solubility, yielding an integral Hasse principle in sufficiently many variables.</p>
-<div class="paper-links">
-<p><a class="paper-link" href="https://arxiv.org/abs/2608.28774">arXiv</a> <a class="paper-link" href="https://arxiv.org/pdf/2608.28774">PDF</a></p>
-</div>
-</section>
-</div>
-<div class="publication-entry">
-<p><span class="publication-status">Accepted</span></p>
-<section id="the-hasse-principle-for-random-homogeneous-polynomials-in-thin-sets" class="level3">
-<h3 class="anchored" data-anchor-id="the-hasse-principle-for-random-homogeneous-polynomials-in-thin-sets">The Hasse principle for random homogeneous polynomials in thin sets</h3>
-<p>Joint work with Kiseok Yeon. To appear in <em>Mathematika</em>. We make progress towards a conjecture of Coliot-Thélène, which predicts that the Hasse principle holds for all homogeneous polynomials of degree <span class="math inline">\(d&gt;3\)</span> in at least <span class="math inline">\(d+1\)</span> variables. Specifically, we show that if we average over a thin set of polynomials of degree <span class="math inline">\(d \ge 17\)</span> and at least <span class="math inline">\(24d +1\)</span> variables, then the Hasse principle holds with probability tending to <span class="math inline">\(1\)</span> as the size of the thin set tends to infinity.</p>
-<div class="paper-links">
-<p><a class="paper-link" href="https://arxiv.org/abs/2506.01291">arXiv</a> <a class="paper-link" href="Publications/The_Hasse_principle_for__random_homogeneous_polynomials_in_thin_sets.pdf">PDF</a></p>
-</div>
-</section>
-</div>
-<div class="publication-entry">
-<p><span class="publication-status">Published</span></p>
-<section id="a-circle-method-approach-to-k-multimagic-squares" class="level3">
-<h3 class="anchored" data-anchor-id="a-circle-method-approach-to-k-multimagic-squares">A circle method approach to <span class="math inline">\(K\)</span>-multimagic squares</h3>
-<p>We study the existence of <span class="math inline">\(K\)</span>-multimagic squares, which are square matrices whose entries are integers and satisfy the condition that if we raise each entry to the <span class="math inline">\(k\)</span>-th power then the resulting matrix is a magic square for all <span class="math inline">\(1\le k\le K\)</span>. We show that for any <span class="math inline">\(K\ge 2\)</span>, there exist infinitely many <span class="math inline">\(K\)</span>-multimagic squares of size <span class="math inline">\(N &gt; 2K(K+1)\)</span>.</p>
-<p><em>Journal of the London Mathematical Society</em> <strong>112</strong> (2025), e70290.</p>
-<div class="paper-links">
-<p><a class="paper-link" href="https://doi.org/10.1112/jlms.70290">DOI</a> <a class="paper-link" href="https://arxiv.org/abs/2406.08161">arXiv</a> <a class="paper-link" href="Publications/K_multimagic_squares.pdf">PDF</a></p>
-</div>
-</section>
-</div>
-</section>
-<section id="contact" class="level2">
-<h2 class="anchored" data-anchor-id="contact">Contact</h2>
-<div class="contact-grid">
-<section id="institution" class="level3 contact-card">
-<h3 class="anchored" data-anchor-id="institution">Institution</h3>
-<p>Department of Mathematics<br> Rice University<br> Herman Brown Hall 450</p>
-</section>
-<section id="email" class="level3 contact-card">
-<h3 class="anchored" data-anchor-id="email">Email</h3>
-<p><a href="mailto:df66@rice.edu">df66@rice.edu</a></p>
-</section>
-<section id="profiles" class="level3 contact-card">
-<h3 class="anchored" data-anchor-id="profiles">Profiles</h3>
-<p><a href="https://github.com/DanielFloresMath">GitHub</a> · <a href="https://orcid.org/0009-0003-7623-2959">ORCID</a></p>
-</section>
+<div>
+  <div class="description">
+    The factorization of x<sup>(p</sup>n) - x over a finite field and the enumeration of monic irreducible polynomials.
+  </div>
 </div>
 
 
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><a href="../notes.html">All notes</a></p>
+<p>The purpose of this note is to explain why <span class="math inline">\(x^{p^n}-x\)</span> is the product of all monic irreducible polynomials in <span class="math inline">\(\mathbb{F}_p[x]\)</span> whose degrees divide <span class="math inline">\(n\)</span>. Comparing degrees and applying Möbius inversion then gives the exact number of monic irreducible polynomials of any prescribed degree.</p>
+<p>Throughout, <span class="math inline">\(p\)</span> is a prime and <span class="math inline">\(d,n\)</span> are positive integers. We regard all finite fields as subfields of a fixed algebraic closure <span class="math inline">\(\overline{\mathbb{F}}_p\)</span>. In particular, <span class="math inline">\(\mathbb{F}_{p^m}\)</span> denotes the field consisting of the roots of <span class="math inline">\(x^{p^m}-x\)</span> in this algebraic closure.</p>
+<section id="two-preliminary-lemmas" class="level2">
+<h2 class="anchored" data-anchor-id="two-preliminary-lemmas">Two preliminary lemmas</h2>
+<section id="lemma-1" class="level3">
+<h3 class="anchored" data-anchor-id="lemma-1">Lemma 1</h3>
+<p>Over any field, <span class="math inline">\(x^d-1\)</span> divides <span class="math inline">\(x^n-1\)</span> if and only if <span class="math inline">\(d\)</span> divides <span class="math inline">\(n\)</span>.</p>
+<p><em>Proof.</em> If <span class="math inline">\(n=dq\)</span>, the geometric-series identity gives</p>
+<p><span class="math display">\[
+\begin{aligned}
+(x^d-1)\sum_{i=0}^{q-1}x^{di}
+&amp;=\sum_{i=1}^{q}x^{di}-\sum_{i=0}^{q-1}x^{di}\\
+&amp;=x^{dq}-1=x^n-1.
+\end{aligned}
+\]</span></p>
+<p>Conversely, write <span class="math inline">\(n=dq+r\)</span>, where <span class="math inline">\(0\leq r&lt;d\)</span>. Then</p>
+<p><span class="math display">\[
+x^n-1=x^r(x^{dq}-1)+(x^r-1).
+\]</span></p>
+<p>If <span class="math inline">\(x^d-1\)</span> divides <span class="math inline">\(x^n-1\)</span>, it therefore divides <span class="math inline">\(x^r-1\)</span>. For <span class="math inline">\(0&lt;r&lt;d\)</span>, this is impossible by comparison of degrees. Thus <span class="math inline">\(r=0\)</span>, so <span class="math inline">\(d\mid n\)</span>. <span class="math inline">\(\square\)</span></p>
+</section>
+<section id="lemma-2" class="level3">
+<h3 class="anchored" data-anchor-id="lemma-2">Lemma 2</h3>
+<p>We have <span class="math inline">\(\mathbb{F}_{p^d}\subseteq\mathbb{F}_{p^n}\)</span> if and only if <span class="math inline">\(d\mid n\)</span>.</p>
+<p><em>Proof.</em> Suppose first that</p>
+<p><span class="math display">\[
+\mathbb{F}_p\subseteq\mathbb{F}_{p^d}\subseteq\mathbb{F}_{p^n}.
+\]</span></p>
+<p>The tower law yields</p>
+<p><span class="math display">\[
+n=[\mathbb{F}_{p^n}:\mathbb{F}_p]
+=[\mathbb{F}_{p^n}:\mathbb{F}_{p^d}]
+[\mathbb{F}_{p^d}:\mathbb{F}_p]
+=[\mathbb{F}_{p^n}:\mathbb{F}_{p^d}]d,
+\]</span></p>
+<p>and hence <span class="math inline">\(d\mid n\)</span>.</p>
+<p>Conversely, suppose that <span class="math inline">\(d\mid n\)</span>. The geometric-series identity from Lemma 1, evaluated at <span class="math inline">\(p\)</span>, gives <span class="math inline">\(p^d-1\mid p^n-1\)</span>. Applying Lemma 1 to these positive integers, and then multiplying the resulting polynomial identity by <span class="math inline">\(x\)</span>, gives</p>
+<p><span class="math display">\[
+\begin{aligned}
+p^d-1\mid p^n-1
+&amp;\Longrightarrow x^{p^d-1}-1\mid x^{p^n-1}-1\\
+&amp;\Longrightarrow x^{p^d}-x\mid x^{p^n}-x.
+\end{aligned}
+\]</span></p>
+<p>Every root of <span class="math inline">\(x^{p^d}-x\)</span> is consequently a root of <span class="math inline">\(x^{p^n}-x\)</span>. By our realization of the finite fields inside <span class="math inline">\(\overline{\mathbb{F}}_p\)</span>, this proves the required inclusion. <span class="math inline">\(\square\)</span></p>
+</section>
+</section>
+<section id="which-irreducible-polynomials-divide-xpn-x" class="level2">
+<h2 class="anchored" data-anchor-id="which-irreducible-polynomials-divide-xpn-x">Which irreducible polynomials divide <span class="math inline">\(x^{p^n}-x\)</span>?</h2>
+<section id="lemma-3" class="level3">
+<h3 class="anchored" data-anchor-id="lemma-3">Lemma 3</h3>
+<p>Let <span class="math inline">\(f\in\mathbb{F}_p[x]\)</span> be a monic irreducible polynomial of degree <span class="math inline">\(d\)</span>. Then <span class="math inline">\(f\)</span> divides <span class="math inline">\(x^{p^n}-x\)</span> if and only if <span class="math inline">\(d\mid n\)</span>.</p>
+<p><em>Proof.</em> Choose a root <span class="math inline">\(\alpha\in\overline{\mathbb{F}}_p\)</span> of <span class="math inline">\(f\)</span>. Since <span class="math inline">\(f\)</span> is the minimal polynomial of <span class="math inline">\(\alpha\)</span> over <span class="math inline">\(\mathbb{F}_p\)</span>, the field <span class="math inline">\(\mathbb{F}_p(\alpha)\)</span> has degree <span class="math inline">\(d\)</span> over <span class="math inline">\(\mathbb{F}_p\)</span> and therefore has <span class="math inline">\(p^d\)</span> elements. Every element of this field satisfies <span class="math inline">\(a^{p^d}=a\)</span>, so, within the fixed algebraic closure,</p>
+<p><span class="math display">\[
+\mathbb{F}_p(\alpha)=\mathbb{F}_{p^d}.
+\]</span></p>
+<p>If <span class="math inline">\(f\mid x^{p^n}-x\)</span>, then <span class="math inline">\(\alpha\in\mathbb{F}_{p^n}\)</span>. Consequently <span class="math inline">\(\mathbb{F}_{p^d}\subseteq\mathbb{F}_{p^n}\)</span>, and Lemma 2 gives <span class="math inline">\(d\mid n\)</span>.</p>
+<p>Conversely, if <span class="math inline">\(d\mid n\)</span>, Lemma 2 gives</p>
+<p><span class="math display">\[
+\alpha\in\mathbb{F}_{p^d}\subseteq\mathbb{F}_{p^n}.
+\]</span></p>
+<p>Thus <span class="math inline">\(\alpha^{p^n}-\alpha=0\)</span>. Since the minimal polynomial of <span class="math inline">\(\alpha\)</span> divides every polynomial over <span class="math inline">\(\mathbb{F}_p\)</span> that vanishes at <span class="math inline">\(\alpha\)</span>, it follows that <span class="math inline">\(f\mid x^{p^n}-x\)</span>. <span class="math inline">\(\square\)</span></p>
+</section>
+</section>
+<section id="the-factorization-theorem" class="level2">
+<h2 class="anchored" data-anchor-id="the-factorization-theorem">The factorization theorem</h2>
+<section id="theorem-1" class="level3">
+<h3 class="anchored" data-anchor-id="theorem-1">Theorem 1</h3>
+<p>Let <span class="math inline">\(\mathcal{F}_{p,n}\)</span> be the set of monic irreducible polynomials of degree <span class="math inline">\(n\)</span> in <span class="math inline">\(\mathbb{F}_p[x]\)</span>. Then</p>
+<p><span class="math display">\[
+x^{p^n}-x
+=\prod_{d\mid n}\left(\prod_{f\in\mathcal{F}_{p,d}}f(x)\right).
+\]</span></p>
+<p><em>Proof.</em> By Lemma 3, the monic irreducible factors of <span class="math inline">\(x^{p^n}-x\)</span> are precisely those belonging to <span class="math inline">\(\mathcal{F}_{p,d}\)</span> for some <span class="math inline">\(d\mid n\)</span>. Moreover, in characteristic <span class="math inline">\(p\)</span>,</p>
+<p><span class="math display">\[
+\frac{d}{dx}(x^{p^n}-x)=-1.
+\]</span></p>
+<p>Hence <span class="math inline">\(x^{p^n}-x\)</span> is squarefree, so each irreducible factor occurs exactly once. Both sides are monic, and the claimed identity follows from unique factorization in <span class="math inline">\(\mathbb{F}_p[x]\)</span>. <span class="math inline">\(\square\)</span></p>
+</section>
+</section>
+<section id="counting-monic-irreducible-polynomials" class="level2">
+<h2 class="anchored" data-anchor-id="counting-monic-irreducible-polynomials">Counting monic irreducible polynomials</h2>
+<section id="corollary-1" class="level3">
+<h3 class="anchored" data-anchor-id="corollary-1">Corollary 1</h3>
+<p>Let <span class="math inline">\(\phi_p(n)\)</span> denote the number of monic irreducible polynomials of degree <span class="math inline">\(n\)</span> in <span class="math inline">\(\mathbb{F}_p[x]\)</span>. For every <span class="math inline">\(n\geq1\)</span>,</p>
+<p><span class="math display">\[
+\phi_p(n)=\frac{1}{n}\sum_{d\mid n}\mu(d)p^{n/d},
+\]</span></p>
+<p>where <span class="math inline">\(\mu\)</span> is the Möbius function.</p>
+<p><em>Proof.</em> Comparing degrees in Theorem 1 gives</p>
+<p><span class="math display">\[
+p^n=\sum_{d\mid n}d\lvert\mathcal{F}_{p,d}\rvert
+=\sum_{d\mid n}d\phi_p(d).
+\]</span></p>
+<p>Möbius inversion therefore yields</p>
+<p><span class="math display">\[
+n\phi_p(n)=\sum_{d\mid n}\mu(d)p^{n/d}.
+\]</span></p>
+<p>Dividing by <span class="math inline">\(n\)</span> proves the formula. <span class="math inline">\(\square\)</span></p>
+
+
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -742,5 +770,5 @@ G. C. Evans Instructor · Department of Mathematics · Rice University
 
 
 
-<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>
