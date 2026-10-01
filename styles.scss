@@ -87,6 +87,13 @@ body::before {
   padding-top: 1.6rem;
 }
 
+// Let longer equations in the note scroll on narrow screens without clipping.
+.math-note .math.display {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
 h1, h2, h3 {
   color: var(--site-blue);
   letter-spacing: -0.018em;
@@ -394,6 +401,12 @@ code,
 }
 
 @media (max-width: 860px) {
+  // The single-column layout below has no room for a sticky margin TOC.
+  #quarto-margin-sidebar,
+  #quarto-toc-toggle {
+    display: none !important;
+  }
+
   #quarto-content.page-columns {
     display: block !important;
     width: 100%;

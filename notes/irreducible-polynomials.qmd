@@ -1,12 +1,13 @@
 ---
 title: "Irreducible polynomials over finite fields"
-description: "The factorization of x^(p^n) - x over a finite field and the enumeration of monic irreducible polynomials."
 toc: true
 ---
 
 [All notes](../notes.qmd)
 
-The purpose of this note is to explain why $x^{p^n}-x$ is the product of all monic irreducible polynomials in $\mathbb{F}_p[x]$ whose degrees divide $n$. Comparing degrees and applying Möbius inversion then gives the exact number of monic irreducible polynomials of any prescribed degree.
+*Recommended prerequisites: polynomial rings and irreducibility, basic finite fields, field extensions and the tower law. Familiarity with Möbius inversion is helpful for the final counting formula.*
+
+In order to establish that $x^{p^n}-x$ is the product of all the irreducible polynomials in $\mathbb{F}_p[x]$ of degree dividing $n$, I first need to prove a couple of Lemmas.
 
 Throughout, $p$ is a prime and $d,n$ are positive integers. We regard all finite fields as subfields of a fixed algebraic closure $\overline{\mathbb{F}}_p$. In particular, $\mathbb{F}_{p^m}$ denotes the field consisting of the roots of $x^{p^m}-x$ in this algebraic closure.
 

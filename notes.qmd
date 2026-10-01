@@ -5,10 +5,17 @@ page-layout: full
 toc: false
 ---
 
+This is where I place some of my auxiliary and expository notes on random topics in mathematics that interest me. I attempt to keep these notes as self contained as possible, however, they often assume some familiarity with topics typically covered in undergraduate mathematics courses. I will list some reccomended prerequisites for each note.
 This section collects auxiliary and expository notes on mathematics.
 
-## Algebra
+[The tricky details not mentioned in the “Pi hiding in prime regularities” video](notes/pi-hiding-in-prime-regularities.html)
+
+In Grant's video, a floor function disappears from a sum and we end up with an infinite series. This seems innocent enough, but the errors could add up and bite you in the butt. Here I work through why they don't.
+
+*Recommended prerequisites: basic divisibility, infinite series (especially alternating series), and limits.*
 
 [Irreducible polynomials over finite fields](notes/irreducible-polynomials.qmd)
 
-Why $x^{p^n}-x$ is the product of the monic irreducible polynomials over $\mathbb{F}_p$ whose degrees divide $n$, and how Möbius inversion gives an exact formula for their number.
+The main point of this short note is to outline exactly why $x^{p^n}-x$ is the product of all the irreducible polynomials in $\mathbb{F}_p[x]$ of degree dividing $n$. At the time I wrote these notes I was unable to find a complete and understandable (from the perspective of an undergraduate student) proof of this statement online. Once we have proven the statement we can then easily obtain a function that gives us the exact number of irreducible polynomials of any degree in $\mathbb{F}_p[x]$ for any prime $p$ using the magical Möbius inversion formula.
+
+*Recommended prerequisites: polynomial rings and irreducibility, basic finite fields, field extensions and the tower law. Familiarity with Möbius inversion is helpful for the final counting formula.*
