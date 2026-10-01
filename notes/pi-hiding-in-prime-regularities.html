@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="Justifying the error estimate behind a divisor-sum asymptotic in Grant Sanderson’s video.">
 
-<title>Daniel Flores Galiote</title>
+<title>The tricky details not mentioned in the “Pi hiding in prime regularities” video – Daniel Flores Galiote</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -29,23 +30,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./assets/profile-optimized.jpg" rel="icon" type="image/jpeg">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-d0af10c81d086fc93b8bdac8c175e47c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../assets/profile-optimized.jpg" rel="icon" type="image/jpeg">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-d0af10c81d086fc93b8bdac8c175e47c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -74,47 +75,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ProfilePage",
-  "url": "https://danielfloresmath.github.io/",
-  "mainEntity": {
-    "@type": "Person",
-    "@id": "https://danielfloresmath.github.io/#person",
-    "name": "Daniel Flores Galiote",
-    "url": "https://danielfloresmath.github.io/",
-    "image": "https://danielfloresmath.github.io/assets/profile-optimized.jpg",
-    "jobTitle": "G. C. Evans Instructor",
-    "worksFor": {
-      "@type": "CollegeOrUniversity",
-      "name": "Rice University",
-      "url": "https://www.rice.edu/"
-    },
-    "workLocation": {
-      "@type": "Place",
-      "name": "Herman Brown Hall 450"
-    },
-    "alumniOf": {
-      "@type": "CollegeOrUniversity",
-      "name": "Purdue University",
-      "url": "https://www.purdue.edu/"
-    },
-    "sameAs": [
-      "https://orcid.org/0009-0003-7623-2959",
-      "https://github.com/DanielFloresMath",
-      "https://www.linkedin.com/in/daniel-flores-galiote-8b4995b6/"
-    ],
-    "knowsAbout": [
-      "Analytic number theory",
-      "Diophantine equations",
-      "Hardy-Littlewood circle method",
-      "Magic squares",
-      "Multimagic squares"
-    ]
-  }
-}
-</script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
@@ -146,21 +106,21 @@ window.Quarto = {
 };
 </script>
 
-<meta property="og:title" content="Daniel Flores Galiote">
-<meta property="og:description" content="Daniel Flores Galiote - analytic number theory, Diophantine equations, and the Hardy-Littlewood circle method.">
-<meta property="og:image" content="https://danielfloresmath.github.io/assets/profile-optimized.jpg">
+<meta property="og:title" content="The tricky details not mentioned in the “Pi hiding in prime regularities” video – Daniel Flores Galiote">
+<meta property="og:description" content="Justifying the error estimate behind a divisor-sum asymptotic in Grant Sanderson’s video.">
+<meta property="og:image" content="https://danielfloresmath.github.io/notes/figures/fractional-part-r4.svg">
 <meta property="og:site_name" content="Daniel Flores Galiote">
-<meta property="og:image:alt" content="Daniel Flores Galiote in academic regalia">
+<meta property="og:image:alt" content="Graph of the fractional part of 16/d from d=1 to d=16. Blue curves decrease between jumps at d=16/m; gold dots mark the integer inputs used in the sum. Open circles at height one are excluded.">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed math-note fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Daniel Flores Galiote</span>
     </a>
   </div>
@@ -171,37 +131,37 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./research.html"> 
+    <a class="nav-link" href="../research.html"> 
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./publications.html"> 
+    <a class="nav-link" href="../publications.html"> 
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./talks.html"> 
+    <a class="nav-link" href="../talks.html"> 
 <span class="menu-text">Talks</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./teaching.html"> 
+    <a class="nav-link" href="../teaching.html"> 
 <span class="menu-text">Teaching</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./notes.html"> 
+    <a class="nav-link" href="../notes.html"> 
 <span class="menu-text">Notes</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="./CV_DF.pdf"> <i class="bi bi-file-earmark-person" role="img" aria-label="Curriculum vitae">
+    <a class="nav-link" href="../CV_DF.pdf"> <i class="bi bi-file-earmark-person" role="img" aria-label="Curriculum vitae">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -228,95 +188,156 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content column-page" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">The tricky details not mentioned in the “Pi hiding in prime regularities” video</h1>
+</div>
 
-
-
-<div class="hero-grid">
-<div class="hero-copy">
-<div class="hero-title" role="heading" aria-level="1">
-Daniel Flores Galiote
-</div>
-<p class="hero-summary">
-Welcome to my academic webpage, I am a postdoctoral instructor in the Department of Mathematics at Rice University under the mentorship of <a href="https://math.rice.edu/~av15/">Anthony Várilly-Alvarado</a>. I recently finished my PhD at Purdue University under the supervision of <a href="https://www.math.purdue.edu/~twooley/">Trevor Wooley</a>. I study problems concerning Diophantine equations via the Hardy–Littlewood circle method. In particular, I am interested in the statistical properties of rational and integer solutions to polynomial equations.
-</p>
-<p class="hero-meta">
-G. C. Evans Instructor · Department of Mathematics · Rice University
-</p>
-<div class="hero-actions">
-<p><a class="site-button primary" href="publications.html">View publications</a> <a class="site-button" href="CV_DF.pdf" target="_blank">Curriculum vitae</a> <a class="site-button" href="mailto:df66@rice.edu">Contact</a></p>
-</div>
-</div>
-<div class="hero-photo">
-<p><img src="assets/profile-optimized.jpg" alt="Daniel Flores Galiote in academic regalia" width="1000" height="1500"></p>
-</div>
-</div>
-<section id="research" class="level2">
-<h2 class="anchored" data-anchor-id="research">Research</h2>
-<p>My research concerns the existence and distribution of integral solutions to systems of polynomial equations. My main tool of choice is the Hardy-Littlewood circle method, which is a powerful tool in analytic number theory which exploits the identity</p>
-<p><span class="math display">\[\int_0^1 e^{2 \pi i \alpha n} d\alpha = \begin{cases} 1 &amp; \text{if } n=0, \\ 0 &amp; \text{if } n \in \mathbb{Z} \backslash \{0\}, \end{cases},\]</span></p>
-<p>and allows one to employ the techniques of Fourier analysis to tackle problems in analytic number theory.</p>
-<p><a href="./research.html">Read more about my research</a> · <a href="./publications.html">View all publications</a></p>
-</section>
-<section id="selected-publications" class="level2">
-<h2 class="anchored" data-anchor-id="selected-publications">Selected publications</h2>
-<div class="publication-entry">
-<p><span class="publication-status">Submitted · 2026</span></p>
-<section id="on-weighted-forms-in-many-variables" class="level3">
-<h3 class="anchored" data-anchor-id="on-weighted-forms-in-many-variables">On weighted forms in many variables</h3>
-<p>Joint work with Kiseok Yeon. We use the Hardy–Littlewood circle method to count integral zeros of weighted forms with two distinct coprime weights. Under an explicit condition on the number of variables and the dimension of the singular locus, we obtain an asymptotic formula in boxes scaled according to the weights. The leading constant is a product of local densities and is positive under nonsingular local solubility, yielding an integral Hasse principle in sufficiently many variables.</p>
-<div class="paper-links">
-<p><a class="paper-link" href="https://arxiv.org/abs/2608.28774">arXiv</a> <a class="paper-link" href="https://arxiv.org/pdf/2608.28774">PDF</a></p>
-</div>
-</section>
-</div>
-<div class="publication-entry">
-<p><span class="publication-status">Accepted</span></p>
-<section id="the-hasse-principle-for-random-homogeneous-polynomials-in-thin-sets" class="level3">
-<h3 class="anchored" data-anchor-id="the-hasse-principle-for-random-homogeneous-polynomials-in-thin-sets">The Hasse principle for random homogeneous polynomials in thin sets</h3>
-<p>Joint work with Kiseok Yeon. To appear in <em>Mathematika</em>. We make progress towards a conjecture of Coliot-Thélène, which predicts that the Hasse principle holds for all homogeneous polynomials of degree <span class="math inline">\(d&gt;3\)</span> in at least <span class="math inline">\(d+1\)</span> variables. Specifically, we show that if we average over a thin set of polynomials of degree <span class="math inline">\(d \ge 17\)</span> and at least <span class="math inline">\(24d +1\)</span> variables, then the Hasse principle holds with probability tending to <span class="math inline">\(1\)</span> as the size of the thin set tends to infinity.</p>
-<div class="paper-links">
-<p><a class="paper-link" href="https://arxiv.org/abs/2506.01291">arXiv</a> <a class="paper-link" href="Publications/The_Hasse_principle_for__random_homogeneous_polynomials_in_thin_sets.pdf">PDF</a></p>
-</div>
-</section>
-</div>
-<div class="publication-entry">
-<p><span class="publication-status">Published</span></p>
-<section id="a-circle-method-approach-to-k-multimagic-squares" class="level3">
-<h3 class="anchored" data-anchor-id="a-circle-method-approach-to-k-multimagic-squares">A circle method approach to <span class="math inline">\(K\)</span>-multimagic squares</h3>
-<p>We study the existence of <span class="math inline">\(K\)</span>-multimagic squares, which are square matrices whose entries are integers and satisfy the condition that if we raise each entry to the <span class="math inline">\(k\)</span>-th power then the resulting matrix is a magic square for all <span class="math inline">\(1\le k\le K\)</span>. We show that for any <span class="math inline">\(K\ge 2\)</span>, there exist infinitely many <span class="math inline">\(K\)</span>-multimagic squares of size <span class="math inline">\(N &gt; 2K(K+1)\)</span>.</p>
-<p><em>Journal of the London Mathematical Society</em> <strong>112</strong> (2025), e70290.</p>
-<div class="paper-links">
-<p><a class="paper-link" href="https://doi.org/10.1112/jlms.70290">DOI</a> <a class="paper-link" href="https://arxiv.org/abs/2406.08161">arXiv</a> <a class="paper-link" href="Publications/K_multimagic_squares.pdf">PDF</a></p>
-</div>
-</section>
-</div>
-</section>
-<section id="contact" class="level2">
-<h2 class="anchored" data-anchor-id="contact">Contact</h2>
-<div class="contact-grid">
-<section id="institution" class="level3 contact-card">
-<h3 class="anchored" data-anchor-id="institution">Institution</h3>
-<p>Department of Mathematics<br> Rice University<br> Herman Brown Hall 450</p>
-</section>
-<section id="email" class="level3 contact-card">
-<h3 class="anchored" data-anchor-id="email">Email</h3>
-<p><a href="mailto:df66@rice.edu">df66@rice.edu</a></p>
-</section>
-<section id="profiles" class="level3 contact-card">
-<h3 class="anchored" data-anchor-id="profiles">Profiles</h3>
-<p><a href="https://github.com/DanielFloresMath">GitHub</a> · <a href="https://orcid.org/0009-0003-7623-2959">ORCID</a></p>
-</section>
+<div>
+  <div class="description">
+    Justifying the error estimate behind a divisor-sum asymptotic in Grant Sanderson’s video.
+  </div>
 </div>
 
 
-</section>
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><a href="../notes.html">All notes</a></p>
+<p><em>Recommended prerequisites: basic divisibility, infinite series (especially alternating series), and limits.</em></p>
+<p>Here <span class="math inline">\(\chi\)</span> is the character modulo <span class="math inline">\(4\)</span> given by</p>
+<p><span class="math display">\[
+\chi(d)=
+\begin{cases}
+0,&amp;d\equiv0,2\pmod4,\\
+1,&amp;d\equiv1\pmod4,\\
+-1,&amp;d\equiv3\pmod4.
+\end{cases}
+\]</span></p>
+<p>Near the end of the video titled <a href="https://www.youtube.com/watch?v=NaL_Cb42WyY">“Pi hiding in prime regularities”</a>, Grant gets to the point in which he wants to state that</p>
+<p><span class="math display">\[
+\begin{aligned}
+\sum_{1\leq n\leq R^2}\sum_{d\mid n}\chi(d)
+&amp;\sim R^2\sum_{d=1}^{\infty}\frac{\chi(d)}{d}\\
+&amp;=R^2\left(1-1/3+1/5-1/7+\cdots\right).
+\end{aligned}
+\]</span></p>
+<p>Here we are letting <span class="math inline">\(R\to\infty\)</span>, and <span class="math inline">\(\sim\)</span> means that the ratio of the two sides tends to <span class="math inline">\(1\)</span>. All the sums below are over positive integers unless stated otherwise.</p>
+<p>He does this by doing a visual representation of a standard trick you use when dealing with sums of sums over divisors. Every pair <span class="math inline">\(n,d\)</span> with <span class="math inline">\(d\mid n\)</span> can be written uniquely as <span class="math inline">\(n=d\ell\)</span>. So instead of fixing <span class="math inline">\(n\)</span> and looking at its divisors, we can fix <span class="math inline">\(d\)</span> and count its multiples up to <span class="math inline">\(R^2\)</span>. This gives</p>
+<p><span class="math display">\[
+\begin{aligned}
+\sum_{1\leq n\leq R^2}\sum_{d\mid n}\chi(d)
+&amp;=\sum_{1\leq d\leq R^2}\sum_{1\leq \ell\leq R^2/d}\chi(d)\\
+&amp;=\sum_{1\leq d\leq R^2}\chi(d)\sum_{1\leq \ell\leq R^2/d}1\\
+&amp;=\sum_{1\leq d\leq R^2}\chi(d)\left\lfloor\frac{R^2}{d}\right\rfloor.
+\end{aligned}
+\]</span></p>
+<p>It is here that he pulls a fast one and simply states that</p>
+<p><span class="math display">\[
+\sum_{1\leq d\leq R^2}\chi(d)\left\lfloor\frac{R^2}{d}\right\rfloor
+\sim R^2\sum_{d=1}^{\infty}\frac{\chi(d)}{d}.
+\]</span></p>
+<p>While this seems innocent enough, it is however possible that the errors add up and bite you in the butt when you do this. So I went ahead and tried to justify this claim (It was surprisingly tricky to show). First we write <span class="math inline">\(\left\lfloor\frac{R^2}{d}\right\rfloor=\frac{R^2}{d}-\left\{\frac{R^2}{d}\right\}\)</span> (Here <span class="math inline">\(\{x\}\)</span> denotes the fractional part of a real number <span class="math inline">\(x\)</span>), then we see that</p>
+<p><span class="math display">\[
+\begin{aligned}
+\sum_{d\leq R^2}\chi(d)\left\lfloor\frac{R^2}{d}\right\rfloor
+&amp;=R^2\sum_{d\leq R^2}\frac{\chi(d)}{d}
+-\sum_{d\leq R^2}\chi(d)\left\{\frac{R^2}{d}\right\}\\
+&amp;=R^2\sum_{d=1}^{\infty}\frac{\chi(d)}{d}
+-R^2\sum_{d&gt;R^2}\frac{\chi(d)}{d}
+-\sum_{d\leq R^2}\chi(d)\left\{\frac{R^2}{d}\right\}.
+\end{aligned}
+\]</span></p>
+<p>Note that in order to prove the claim Grant made in the video (The main term is expected to be a constant times <span class="math inline">\(R^2\)</span>) it is enough to show that</p>
+<p><span class="math display">\[
+R^2\sum_{d&gt;R^2}\frac{\chi(d)}{d}
++\sum_{1\leq d\leq R^2}\chi(d)\left\{\frac{R^2}{d}\right\}
+=o(R^2).
+\]</span></p>
+<p>The notation <span class="math inline">\(o(R^2)\)</span> just means that the error divided by <span class="math inline">\(R^2\)</span> tends to zero. So we don’t need the error itself to be small, we just need it to be small compared with <span class="math inline">\(R^2\)</span>.</p>
+<p>We may easily take care of the left hand sum. After removing the zero terms, <span class="math inline">\(\sum_{d&gt;R^2}\frac{\chi(d)}{d}\)</span> is the tail of an alternating series whose term magnitudes decrease to zero. The decreasing part matters here: just knowing that the individual terms are small would not be enough. By the <a href="https://en.wikipedia.org/wiki/Alternating_series_test#Alternating_series_estimation_theorem">alternating series estimation theorem</a>, the absolute value of this tail is at most the first term in magnitude. Thus</p>
+<p><span class="math display">\[
+\left|R^2\sum_{d&gt;R^2}\frac{\chi(d)}{d}\right|
+&lt; R^2\cdot\frac{1}{R^2}=1.
+\]</span></p>
+<p>Now comes the slightly tricky part, bounding the other sum. If we just take absolute values term by term, we get a bound of <span class="math inline">\(R^2\)</span>, which is exactly the size we are trying to improve on. We need to use some cancellation from <span class="math inline">\(\chi(d)\)</span>.</p>
+<p>The problem is that <span class="math inline">\(\{R^2/d\}\)</span> keeps jumping, so it is not decreasing over the whole sum. But between two consecutive jumps it does decrease nicely. Here is what this looks like when <span class="math inline">\(R=4\)</span>. The sum only uses integer values of <span class="math inline">\(d\)</span> (the gold dots), but letting <span class="math inline">\(d\)</span> vary continuously makes the jumps easier to see.</p>
+<div id="fig-fractional-part" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Graph of the fractional part of 16/d from d=1 to d=16. Blue curves decrease between jumps at d=16/m; gold dots mark the integer inputs used in the sum. Open circles at height one are excluded.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-fractional-part-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/fractional-part-r4.svg" class="img-fluid figure-img" alt="Graph of the fractional part of 16/d from d=1 to d=16. Blue curves decrease between jumps at d=16/m; gold dots mark the integer inputs used in the sum. Open circles at height one are excluded." width="900">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fractional-part-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: The fractional part <span class="math inline">\(\{16/d\}\)</span> for <span class="math inline">\(1\leq d\leq16\)</span>. Each blue branch decreases on an interval <span class="math inline">\(16/(m+1)&lt;d\leq16/m\)</span>. Open circles mark excluded endpoints at height <span class="math inline">\(1\)</span>; the value at each jump is <span class="math inline">\(0\)</span>.
+</figcaption>
+</figure>
+</div>
+<p>So let’s split the sum into intervals on which <span class="math inline">\(\lfloor R^2/d\rfloor\)</span> is constant. In particular,</p>
+<p><span class="math display">\[
+\frac{R^2}{m+1}&lt;d\leq\frac{R^2}{m}
+\quad\Longleftrightarrow\quad
+m\leq\frac{R^2}{d}&lt;m+1.
+\]</span></p>
+<p>On this interval the floor is <span class="math inline">\(m\)</span>, and hence <span class="math inline">\(\{R^2/d\}=R^2/d-m\)</span>. Let <span class="math inline">\(K&gt;1\)</span> be an integer. We leave the terms with <span class="math inline">\(d\leq R^2/K\)</span> alone for now and split up the rest as such:</p>
+<p><span class="math display">\[
+\begin{aligned}
+\sum_{d\leq R^2}\chi(d)\left\{\frac{R^2}{d}\right\}
+&amp;=\sum_{d\leq R^2/K}\chi(d)\left\{\frac{R^2}{d}\right\}
++\sum_{m=1}^{K-1}\left(
+\sum_{R^2/(m+1)&lt;d\leq R^2/m}\chi(d)\left\{\frac{R^2}{d}\right\}
+\right).
+\end{aligned}
+\]</span></p>
+<p>Feel free to take some time to justify to yourself that the sum on the left hand side is in fact equal to the sum on the right hand side, this is definitely not obvious at first glance. The intervals for <span class="math inline">\(m=1,\ldots,K-1\)</span> fit together to cover exactly <span class="math inline">\(R^2/K&lt;d\leq R^2\)</span>, with no gaps or overlaps. Now why did I make this sum look so much worse? Well note that</p>
+<p><span class="math display">\[
+\left|\sum_{R^2/(m+1)&lt;d\leq R^2/m}\chi(d)\left\{\frac{R^2}{d}\right\}\right|\leq1
+\]</span></p>
+<p>because, after omitting the even <span class="math inline">\(d\)</span>, the signs of <span class="math inline">\(\chi(d)\)</span> alternate, and the magnitudes <span class="math inline">\(R^2/d-m\)</span> decrease as <span class="math inline">\(d\)</span> increases. They are all between <span class="math inline">\(0\)</span> and <span class="math inline">\(1\)</span>, so this finite alternating sum has absolute value at most <span class="math inline">\(1\)</span>, regardless of whether its first nonzero term is positive or negative. There are <span class="math inline">\(K-1\)</span> such intervals, so the triangle inequality gives</p>
+<p><span class="math display">\[
+\left|\sum_{m=1}^{K-1}\left(
+\sum_{R^2/(m+1)&lt;d\leq R^2/m}\chi(d)\left\{\frac{R^2}{d}\right\}
+\right)\right|\leq K-1\leq K.
+\]</span></p>
+<p>For the terms we left alone, we have at most <span class="math inline">\(R^2/K\)</span> terms, each of absolute value at most <span class="math inline">\(1\)</span>. So here the trivial bound is enough:</p>
+<p><span class="math display">\[
+\left|\sum_{1\leq d\leq R^2/K}\chi(d)\left\{\frac{R^2}{d}\right\}\right|
+\leq\frac{R^2}{K}.
+\]</span></p>
+<p>Combining these two bounds we have</p>
+<p><span class="math display">\[
+\left|\sum_{1\leq d\leq R^2}\chi(d)\left\{\frac{R^2}{d}\right\}\right|
+\leq\frac{R^2}{K}+K.
+\]</span></p>
+<p>Now we get to choose <span class="math inline">\(K\)</span>. Making it bigger improves the first term but makes the second one worse, so let’s balance them by taking <span class="math inline">\(K=\lceil R\rceil\)</span> for <span class="math inline">\(R&gt;1\)</span>. Since <span class="math inline">\(R\leq K&lt;R+1\)</span>, we get</p>
+<p><span class="math display">\[
+\left|\sum_{d\leq R^2}\chi(d)\left\{\frac{R^2}{d}\right\}\right|
+\leq\frac{R^2}{\lceil R\rceil}+\lceil R\rceil
+\leq 2R+1.
+\]</span></p>
+<p>Together with the bound of <span class="math inline">\(1\)</span> for the series tail, the total error is at most <span class="math inline">\(2R+2\)</span>. Dividing this by <span class="math inline">\(R^2\)</span> gives something tending to zero, which is exactly what we wanted. In fact, we have shown a little more:</p>
+<p><span class="math display">\[
+\sum_{n\leq R^2}\sum_{d\mid n}\chi(d)
+=R^2\sum_{d=1}^{\infty}\frac{\chi(d)}{d}+O(R).
+\]</span></p>
+<p>Here <span class="math inline">\(O(R)\)</span> means that the absolute value of the error is bounded by a constant times <span class="math inline">\(R\)</span> for all sufficiently large <span class="math inline">\(R\)</span>. So the statement Grant made is in fact correct (of course), however it is not as trivial to prove as one might assume at first.</p>
+
+
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -742,5 +763,5 @@ G. C. Evans Instructor · Department of Mathematics · Rice University
 
 
 
-<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

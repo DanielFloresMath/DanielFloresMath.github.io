@@ -1,0 +1,132 @@
+---
+title: 'The tricky details not mentioned in the “Pi hiding in prime regularities” video'
+description: "Justifying the error estimate behind a divisor-sum asymptotic in Grant Sanderson's video."
+toc: false
+---
+
+[All notes](../notes.qmd)
+
+*Recommended prerequisites: basic divisibility, infinite series (especially alternating series), and limits.*
+
+Here $\chi$ is the character modulo $4$ given by
+
+$$
+\chi(d)=
+\begin{cases}
+0,&d\equiv0,2\pmod4,\\
+1,&d\equiv1\pmod4,\\
+-1,&d\equiv3\pmod4.
+\end{cases}
+$$
+
+Near the end of the video titled [“Pi hiding in prime regularities”](https://www.youtube.com/watch?v=NaL_Cb42WyY), Grant gets to the point in which he wants to state that
+
+$$
+\begin{aligned}
+\sum_{1\leq n\leq R^2}\sum_{d\mid n}\chi(d)
+&\sim R^2\sum_{d=1}^{\infty}\frac{\chi(d)}{d}\\
+&=R^2\left(1-1/3+1/5-1/7+\cdots\right).
+\end{aligned}
+$$
+
+He does this by doing a visual representation of a standard trick you use when dealing with sums of sums over divisors, he shows that
+
+$$
+\begin{aligned}
+\sum_{1\leq n\leq R^2}\sum_{d\mid n}\chi(d)
+&=\sum_{1\leq d\leq R^2}\sum_{1\leq l\leq R^2/d}\chi(d)\\
+&=\sum_{1\leq d\leq R^2}\chi(d)\sum_{1\leq l\leq R^2/d}1\\
+&=\sum_{1\leq d\leq R^2}\chi(d)\left\lfloor\frac{R^2}{d}\right\rfloor.
+\end{aligned}
+$$
+
+It is here that he pulls a fast one and simply states that
+
+$$
+\sum_{1\leq d\leq R^2}\chi(d)\left\lfloor\frac{R^2}{d}\right\rfloor
+\sim R^2\sum_{d=1}^{\infty}\frac{\chi(d)}{d}.
+$$
+
+While this seems innocent enough, it is however possible that the errors add up and bite you in the butt when you do this. So I went ahead and tried to justify this claim (It was surprisingly tricky to show). First we write $\left\lfloor\frac{R^2}{d}\right\rfloor=\frac{R^2}{d}-\left\{\frac{R^2}{d}\right\}$ (Here $\{x\}$ denotes the fractional part of a real number $x$), then we see that
+
+$$
+\begin{aligned}
+&\sum_{1\leq d\leq R^2}\chi(d)\left\lfloor\frac{R^2}{d}\right\rfloor\\
+&\quad=\sum_{1\leq d\leq R^2}\chi(d)\frac{R^2}{d}
+-\sum_{1\leq d\leq R^2}\chi(d)\left\{\frac{R^2}{d}\right\}\\
+&\quad=R^2\sum_{d=1}^{\infty}\frac{\chi(d)}{d}
+-R^2\sum_{d>R^2}\frac{\chi(d)}{d}\\
+&\qquad\quad-\sum_{1\leq d\leq R^2}\chi(d)\left\{\frac{R^2}{d}\right\}.
+\end{aligned}
+$$
+
+Note that in order to prove the claim Grant made in the video it is enough to show that
+
+$$
+R^2\sum_{d>R^2}\frac{\chi(d)}{d}
++\sum_{1\leq d\leq R^2}\chi(d)\left\{\frac{R^2}{d}\right\}
+=o(R^2).
+$$
+
+We may easily take care of the left hand sum by noting that $\sum_{d>R^2}\frac{\chi(d)}{d}$ is a convergent alternating sum whose terms are all less than $1/R^2$, thus the sum itself is bounded by $1/R^2$ and so we get
+
+$$
+\left|R^2\sum_{d>R^2}\frac{\chi(d)}{d}\right|
+\leq\left|R^2/R^2\right|=1.
+$$
+
+Now comes the slightly tricky part, bounding the other sum, let $n>1$ be an integer, then we may split the sum as such
+
+$$
+\begin{aligned}
+&\sum_{1\leq d\leq R^2}\chi(d)\left\{\frac{R^2}{d}\right\}\\
+&\quad=\sum_{1\leq d\leq R^2/n}\chi(d)\left\{\frac{R^2}{d}\right\}\\
+&\qquad+\sum_{m=1}^{n-1}\left(
+\sum_{R^2/(m+1)<d\leq R^2/m}\chi(d)\left\{\frac{R^2}{d}\right\}
+\right).
+\end{aligned}
+$$
+
+Feel free to take some time to justify to yourself that the sum on the left hand side is in fact equal to the sum on the right hand side, this is definitely not obvious at first glance. Now why did I make this sum look so much worse? Well note that
+
+$$
+\left|\sum_{R^2/(m+1)<d\leq R^2/m}\chi(d)\left\{\frac{R^2}{d}\right\}\right|\leq1
+$$
+
+because, after omitting the zero terms, it is a finite alternating series whose term magnitudes decrease and are all bounded above by $1$. On this interval $\{R^2/d\}=R^2/d-m$, which decreases as $d$ increases. Hence
+
+$$
+\left|\sum_{m=1}^{n-1}\left(
+\sum_{R^2/(m+1)<d\leq R^2/m}\chi(d)\left\{\frac{R^2}{d}\right\}
+\right)\right|\leq n
+$$
+
+and we have the trivial bound
+
+$$
+\left|\sum_{1\leq d\leq R^2/n}\chi(d)\left\{\frac{R^2}{d}\right\}\right|
+\leq\frac{R^2}{n}.
+$$
+
+Combining these two bounds we have
+
+$$
+\left|\sum_{1\leq d\leq R^2}\chi(d)\left\{\frac{R^2}{d}\right\}\right|
+\leq\frac{R^2}{n}+n,
+$$
+
+thus
+
+$$
+\limsup_{R\to\infty}
+\frac{\left|\sum_{1\leq d\leq R^2}\chi(d)\left\{\frac{R^2}{d}\right\}\right|}{R^2}
+\leq1/n\to0\quad\text{as}\quad n\to\infty
+$$
+
+which shows that
+
+$$
+\sum_{1\leq d\leq R^2}\chi(d)\left\{\frac{R^2}{d}\right\}=o(R^2).
+$$
+
+This shows that the statement Grant made is in fact correct (of course), however it is not as trivial to prove as one might assume at first.
